@@ -1,0 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,600);
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Open Sans', Helvetica, sans-serif; }
+
+nav {
+  background-color: #224769; }
+  nav a {
+    color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */

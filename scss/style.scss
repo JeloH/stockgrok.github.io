@@ -1,0 +1,20 @@
+$brand-blue: #224769;
+//@import url(reset.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,600);
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+h1 {}
+
+nav {
+    background-color: $brand-blue;
+    a {
+        color: #ffffff;
+    }
+    
+}
