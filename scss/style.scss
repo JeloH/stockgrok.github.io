@@ -1,22 +1,76 @@
 //ONLY USE THIS FILE
 $brand-blue: #224769;
 $brand-red: #CF4A27;
+$light-gray: #eee;
+$background-gray: #E8ECF0;
+////////////////////////////////////////////To-do:////////////////////////////////////////////
+//  Change brand hover color 
+//  Make hover blue consistent
+/////////////////////////////////////////////////////////////////////////////////////////////
 //@import url(reset.css);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,600);
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,600);
 * {
     box-sizing: border-box;
 }
 
 html {
-    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-family: aktiv-grotesk, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
-h1 {}
+h1 {
+    color: $brand-red;
+}
 
-nav {
+.caption {
+    font-size: .8em;
+    color: #aaa;
+}
+
+.row {
+    margin: 20px 0;
+}
+
+.skip-overview {
+    height: 50vh;
+}
+
+#content {
+    margin-top: 40px;
+}
+
+section {
+    padding: 1px 0 10px 0;    
+}
+
+section:nth-child(even) {
+    background-color: $background-gray;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+    div>div {
+        margin-left: 16.666%;
+    }
+}
+
+nav,
+footer {
     background-color: $brand-blue;
-    a {
+    a,
+    p {
         color: #ffffff;
     }
-    
+    .active {
+        background-color: $light-gray;
+        color: $brand-blue;
+    }
+}
+
+footer {
+    padding: 20px 30px;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 40px;
 }
