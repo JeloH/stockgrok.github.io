@@ -1,16 +1,31 @@
-$("#play-group").focus(function() {
-  window.scrollTo(250,350);
-});
-$("#wakeup-group").focus(function(){
-  window.scrollTo(250 , 600);
-});
-$("#sleep-group" ).focus(function(){
-  window.scrollTo(250 , 850);
-});
-$("#feed-group" ).focus(function() {
-  window.scrollTo(250 , 1100);
-});
-$("#cuddle-group" ).focus(function(){
-  window.scrollTo(250 , 1350);
+$(function() {
+		$('.pop').on('click', function() {
+			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			$('#imagemodal').modal('show');   
+		});		
 });
 
+// Add smooth scrolling to all links
+
+
+$("a").on('click', function (event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1000, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+    } // End if
+});
