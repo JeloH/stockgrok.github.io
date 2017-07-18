@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1652px" height="967px" viewBox="0 0 1652 967" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>svg-try</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="svg-try">
+            <g id="Group" transform="translate(96.000000, 71.000000)">
+                <g id="Research-Information">
+                    <g id="Research-Strategies" transform="translate(0.000000, 143.000000)">
+                        <g id="Subject-Matter-Expert-Interviews">
+                            <polygon id="Box" fill="#E8ECF0" points="0 0 300 0 300 150 150 170 0 150"></polygon>
+                            <text id="Subject-Matter-Exper" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
+                                <tspan x="67.0696613" y="68">Subject Matter </tspan>
+                                <tspan x="52.9505207" y="96">Expert Interviews</tspan>
+                            </text>
+                        </g>
+                        <g id="Literature-Review" transform="translate(0.000000, 160.000000)">
+                            <polygon id="Box" fill="#E8ECF0" points="0 0 150 20 300 0 300 150 150 170 0 150"></polygon>
+                            <text font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
+                                <tspan x="52.4348957" y="94">Literature Review</tspan>
+                            </text>
+                        </g>
+                        <g id="Subject-Matter-Expert-Interviews" transform="translate(0.000000, 320.000000)">
+                            <polygon id="Box" fill="#E8ECF0" points="0 0 150 20 300 0 300 150 150 170 0 150"></polygon>
+                            <text id="Empathy-Exercise" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
+                                <tspan x="49.9147134" y="94">Empathy Exercise</tspan>
+                            </text>
+                        </g>
+                        <g id="Literature-Review" transform="translate(0.000000, 480.000000)">
+                            <path d="M0,0 L150,20 L300,0 L300,150 C230.729542,150 180.729542,150 150,150 C119.270458,150 69.2704582,150 0,150 L0,0 Z" id="Box" fill="#E8ECF0"></path>
+                            <text id="Affinity-Clustering" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
+                                <tspan x="48.6041665" y="89">Affinity Clustering</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Research-Insights" transform="translate(350.000000, 143.000000)">
+                        <rect id="Box" fill="#FAECE9" x="0" y="0" width="300" height="630"></rect>
+                        <text id="5-Secondary-Research" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
+                            <tspan x="77.8832267" y="308">5 Secondary </tspan>
+                            <tspan x="48.7250235" y="336">Research Insights</tspan>
+                        </text>
+                    </g>
+                    <text id="Secondary-Research" font-family=".SFNSDisplay, .SF NS Display" font-size="48" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
+                        <tspan x="0" y="46">Secondary Research</tspan>
+                    </text>
+                </g>
+                <g id="Contextual-Inquiry-Information" transform="translate(750.000000, 0.000000)">
+                    <g id="Contextual-Inquiry-Research-Strategies" transform="translate(0.000000, 143.000000)">
+                        <g id="Subject-Matter-Expert-Interviews">
+                            <polygon id="Box" fill="#E8ECF0" points="0 0 300 0 300 150 150 170 0 150"></polygon>
+                            <text id="Interviews-with-Peop" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
+                                <tspan x="65.3066405" y="63">Interviews with </tspan>
+                                <tspan x="46.7460936" y="91">People with Visual </tspan>
+                                <tspan x="80.0462238" y="119">Impairments</tspan>
+                            </text>
+                        </g>
+                        <g id="Literature-Review" transform="translate(0.000000, 160.000000)">
+                            <polygon id="Box" fill="#E8ECF0" points="0 0 150 20 300 0 300 150 150 170 0 150"></polygon>
+                            <text id="Interviews-with-Sigh" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
+                                <tspan x="65.3066405" y="63">Interviews with </tspan>
+                                <tspan x="58.8789061" y="91">Sighted Finance </tspan>
+                                <tspan x="107.553385" y="119">Experts</tspan>
+                            </text>
+                        </g>
+                        <g id="Literature-Review" transform="translate(0.000000, 320.000000)">
+                            <polygon id="Box" fill="#E8ECF0" points="0 0 150 20 300 0 300 150 150 170 0 150"></polygon>
+                            <text id="Interview-Interpreta" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
+                                <tspan x="98.7773437" y="63">Interview </tspan>
+                                <tspan x="74.0423176" y="91">Interpretation </tspan>
+                                <tspan x="99.5149739" y="119">Sessions</tspan>
+                            </text>
+                        </g>
+                        <g id="Subject-Matter-Expert-Interviews" transform="translate(0.000000, 480.000000)">
+                            <polygon id="Box" fill="#E8ECF0" points="0 0 150 20 300 0 300 150 0 150"></polygon>
+                            <text id="Affinity-Diagramming" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
+                                <tspan x="31.2434894" y="78">Affinity Diagramming</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Contextual-Inquiry-Insights" transform="translate(350.000000, 143.000000)">
+                        <rect id="Box" fill="#FAECE9" x="0" y="0" width="300" height="630"></rect>
+                        <text id="6-Primary-Research-I" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
+                            <tspan x="95.0205965" y="308">6 Primary</tspan>
+                            <tspan x="48.7250235" y="336">Research Insights</tspan>
+                        </text>
+                    </g>
+                    <text id="Contextual-Inquiry" font-family=".SFNSDisplay, .SF NS Display" font-size="48" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
+                        <tspan x="0" y="46">Contextual Inquiry</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-2" transform="translate(588.000000, 163.000000)" stroke="#000000">
+                <polygon id="Triangle" fill="#000000" points="408 51 400 35 416 35"></polygon>
+                <polygon id="Triangle" fill="#000000" transform="translate(8.000000, 43.000000) rotate(-180.000000) translate(-8.000000, -43.000000) " points="8 51 0 35 16 35"></polygon>
+                <polyline id="Path-2" transform="translate(208.000000, 25.608806) rotate(-180.000000) translate(-208.000000, -25.608806) " points="8 0.608806214 8 50.6088062 408 50.6088062 408 0.608806214"></polyline>
+            </g>
+            <g id="Arrow" transform="translate(238.000000, 843.000000)" stroke="#000000">
+                <polygon id="Triangle" fill="#000000" points="358 1 366 17 350 17"></polygon>
+                <polygon id="Triangle" fill="#000000" points="8 17 0 1 16 1"></polygon>
+                <polyline id="Path-2" transform="translate(183.000000, 25.608806) rotate(-360.000000) translate(-183.000000, -25.608806) " points="8 0.608806214 8 50.6088062 358 50.6088062 358 0.608806214"></polyline>
+            </g>
+            <g id="Arrow" transform="translate(996.000000, 843.000000)" stroke="#000000">
+                <polygon id="Triangle" fill="#000000" points="358 1 366 17 350 17"></polygon>
+                <polygon id="Triangle" fill="#000000" points="8 17 0 1 16 1"></polygon>
+                <polyline id="Path-2" transform="translate(183.000000, 25.608806) rotate(-360.000000) translate(-183.000000, -25.608806) " points="8 0.608806214 8 50.6088062 358 50.6088062 358 0.608806214"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
