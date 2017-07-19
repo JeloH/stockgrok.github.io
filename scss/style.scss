@@ -1,6 +1,6 @@
 //ONLY USE THIS FILE
 $brand-blue: #224769;
-$brand-red: #CF4A27;
+$brand-red: #fc932d;
 $background-red: #FAECE9;
 $light-gray: #eee;
 $background-gray: #E8ECF0;
@@ -55,6 +55,10 @@ ol {
     h1 {
         color: #fff !important;
     }
+    p {
+        color: #eee;
+    }
+    
     background-color: $brand-red !important;
 }
 

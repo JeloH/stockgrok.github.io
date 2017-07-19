@@ -9,7 +9,7 @@ html {
   font-weight: 400; }
 
 h1 {
-  color: #CF4A27; }
+  color: #fc932d; }
 
 h3 {
   font-size: 1em;
@@ -27,9 +27,11 @@ ol {
   margin-bottom: 40px; }
 
 .header-sec {
-  background-color: #CF4A27 !important; }
+  background-color: #fc932d !important; }
   .header-sec h1 {
     color: #fff !important; }
+  .header-sec p {
+    color: #eee; }
 
 .caption {
   font-size: .8em;
