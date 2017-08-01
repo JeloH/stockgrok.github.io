@@ -176,10 +176,24 @@
 //  });
 //});
 
+// $(function () {
+//     $('.pop').on('click', function () {
+//         $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+//         $('#imagemodal').modal('show');
+//     });
+// });
+
 $(function () {
-    $('.pop').on('click', function () {
-        $('.imagepreview').attr('src', $(this).find('img').attr('src'));
-        $('#imagemodal').modal('show');
+    $('.image-modal').modaal({
+        type: 'image'
+    });
+
+    $("img").on('click', function (event) {
+
+        $(".image-modal").attr("href", $(this).prop('src'));
+        $(".image-modal").attr("alt", $(this).prop('alt'));
+        $(".image-modal").click();
+
     });
 });
 
