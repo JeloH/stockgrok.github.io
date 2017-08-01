@@ -1,11 +1,13 @@
 //ONLY USE THIS FILE
-$brand-blue: #224769;
-$brand-red: #fc932d;
+$brand-blue-100: #000051;
+$brand-blue-50: #7F7FA8;
+$brand-blue-10: #E5E5ED;
+$brand-red-100: #ff5722;
+$brand-red-50: #FFAB90;
+$brand-red-10: #FFEEE8;
 $background-red: #FAECE9;
 $light-gray: #eee;
 $background-gray: #E8ECF0;
-
-
 ////////////////////////////////////////////To-do:////////////////////////////////////////////
 //  Change brand hover color 
 //  Make hover blue consistent
@@ -13,23 +15,76 @@ $background-gray: #E8ECF0;
 // button margin
 /////////////////////////////////////////////////////////////////////////////////////////////
 //@import url(reset.css);
-
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600i,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,400i,500,600i,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,500,600i,700');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,600i,700');
 * {
     box-sizing: border-box;
 }
 
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'yrsa', serif;
+    font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: 400;
 }
 
+p {
+    line-height: 32px;
+    font-family: 'Roboto', serif;
+}
+.page-content {
+    background-color: $brand-blue-10;
+    a {
+        color: $brand-blue-100;
+    }
+    position: fixed;
+    z-index: 3;
+width: 100%;
+//    top: 0;
+}
+
+
+section{
+  position:relative;
+  margin: 0;
+  padding: 0;  
+  display:block;
+  z-index: 0;
+}
+#home{
+background:#A0CAB5;  
+  top:40px;
+}
+#work{
+background:#CDE9CA;
+}
+#about{
+background:#F1EDD0;
+}
+#contact{
+background:#F38A8A;
+}
+h2{
+  padding: 0;
+  margin: 0;
+}
+
+
 h1 {
-    color: $brand-red;
+    color: $brand-red-100;
+    font-size: 50px;
+}
+
+h1,
+h2 {
+    margin-bottom: 36px;
+}
+
+h1,h2,h3 {
+    line-height: 55px;
+    font-family: 'Nunito', sans-serif;
+    
 }
 
 h3 {
@@ -37,9 +92,9 @@ h3 {
     font-weight: 600;
 }
 
-p, li {
+p,
+li {
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
 }
 
 li {
@@ -52,14 +107,13 @@ ol {
 }
 
 .header-sec {
-    h1 {
-        color: #fff !important;
-    }
-    p {
-        color: #eee;
-    }
-    
-    background-color: $brand-red !important;
+//    h1 {
+//        color: #fff !important;
+//    }
+//    p {
+//        color: #eee;
+//    }
+//    background-color: $brand-blue-100 !important;
 }
 
 .caption {
@@ -67,38 +121,119 @@ ol {
     color: #aaa;
 }
 
+
+/* needed for old browsers */
+
+dialog {
+    display: block;
+}
+
+
+/* removes scroll when modal is opened */
+
+.no-scroll {
+    overflow: hidden;
+}
+
+
+/* overlay covers everything */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 666;
+}
+
+
+/* modal */
+
+.modal {
+    position: fixed;
+    left: 25%;
+    right: auto;
+    top: 15%;
+    width: 50%;
+    background: #fff;
+    z-index: 667;
+}
+
 .row {
     margin: 20px 0;
 }
 
 
-h2, h3 {
+
+h2,
+h3 {
     color: black;
 }
 
-.navbar-brand:hover {
-    background-color: $background-red;
-    font-weight: 600;
+.navbar-brand {
+    font-family: 'Nunito', sans-serif;
 }
+.navbar-brand:hover {
+    border-bottom: #ffffff solid 3px;
+    font-weight: 600;
+
+}
+
+//.fixed-body {
+//    position: fixed;
+//}
+.breadcrumb > li {
+    display: inline;
+}
+
+.breadcrumb {
+    background-color: $brand-blue-10;
+    a {
+        color: $brand-blue-100;
+    }
+}
+
 .navbar-brand {
     font-weight: 600;
     color: white;
 }
 
 .skip-overview {
-    height: 100%;
+    margin-top: 100px;
+    h1 {
+        color: $brand-red-100 !important;
+    }
 }
 
 .navbar-right {
     margin-bottom: -15px;
+
+}
+
+.navbar-right:hover {
+    a:hover {
+        border-bottom: #ffffff solid 3px;
+
+
+    }
+}
+
+.container-div {
+
+    height: 100vh;
+    background-color: $brand-blue-100;
+    p {     
+        color: $brand-blue-10;
+    }
 }
 
 #content {
-    margin-top: 40px;
+//    margin-top: 40px;
 }
 
 section {
-    padding: 1px 0 10px 0;    
+    padding: 1px 0 10px 0;
 }
 
 section:nth-child(even) {
@@ -107,18 +242,24 @@ section:nth-child(even) {
 
 nav,
 footer {
-    background-color: $brand-blue;
+    background-color: $brand-blue-100;
     a,
-    p {
+    p, li {
         color: #ffffff;
+        font-size: 18px;
     }
     .active {
-        background-color: $light-gray;
-        color: $brand-blue;
+        background-color: $brand-red-10;
+        color: $brand-blue-100;
     }
     h3 {
         color: white;
+        margin-top: 8px;
     }
+}
+
+nav {
+//    border-bottom: $brand-red-100 4px solid;
 }
 
 footer {
@@ -134,15 +275,13 @@ footer {
 
 
 body {
-    font-family: 'Montserrat', sans-serif;
-//    background: #f9f9f9;
+    //    background: #f9f9f9;
     font-weight: 300;
-    font-size: 15px;
+    font-family: 'yrsa', serif;
+    font-size: 20px;
     color: #333;
     overflow: scroll;
     overflow-x: hidden;
     padding: 0;
-  margin: 0;
+    margin: 0;
 }
-
-

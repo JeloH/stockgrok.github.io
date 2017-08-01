@@ -15,187 +15,51 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/style.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/script.js" async></script>
+    <!--    </div>-->
 
 
 
 </head>
-<nav role="navigation">
-    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">b7g</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="research.html">Research</a></li>
-            <li><a class="active" href="#">Design</a></li>
-            <li><a href="next-steps.html">Next Steps</a></li>
-            <li><a href="team-b7g.html">Team b7g</a></li>
-        </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-    <!-- /.container-fluid -->
 
-</nav>
+
+<div id="nav">
+
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#nav").load("nav.html");
+    });
+</script>
 
 <body>
 
-    <div class="container-div" role="main" id="content">
-        <div class="row svg-row">
-            <div class="col-sm-4 col-sm-offset-2">
+
+
+    <div role="main" id="content" class="container-div">
+
+            <div class="col-sm-8 col-sm-offset-2">
                 <div class="skip-overview">
-                    <h1 tabindex="0">Design Overview</h1>
-                    <a href="#ideate">
-                        <p>Ideation: Generating design ideas</p>
-                    </a>
-                    <a href="#lofi">
-                        <p>Prototyping: Iterative design</p>
-                    </a>
-
-                    <div class="interactive-svg">
-                        <?xml version="1.0" encoding="UTF-8"?>
-                            <svg id="InteractiveSVG" aria-labelledby="timeline-title" aria-describedby="timeline-desc" role="group" width="900px" height="526px" viewBox="0 0 1652 967" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-                                <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
-                                <title>svg-try</title>
-                                <desc id="timeline-desc">b7g Research Process Diagram</desc>
-                                <defs></defs>
-                                <g id="timeline" aria-label="The sequence of our secondary and primary research process" role="list">
-                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-
-                                        <g id="svg-try">
-                                            <g id="Group" transform="translate(96.000000, 71.000000)">
-                                                <text id="Secondary-Research" font-family=".SFNSDisplay, .SF NS Display" font-size="48" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
-                                                    <tspan x="0" y="46">Secondary Research</tspan>
-                                                </text>
-                                                <tspan class="offscreen" id="play-description">List of methods for secondary research</tspan>
-                                                <g id="Research-Information">
-                                                    <g id="Research-Strategies" transform="translate(0.000000, 143.000000)">
-                                                        <g id="Subject-Matter-Expert-Interviews">
-                                                            <polygon id="Box" fill="#E8ECF0" points="0 0 300 0 300 150 150 170 0 150"></polygon>
-
-                                                            <text id="Subject-Matter-Exper" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
-                                                                <tspan x="67.0696613" y="68">Subject Matter </tspan>
-                                                                <tspan x="52.9505207" y="96">Expert Interviews</tspan>
-                                                            </text>
-                                                        </g>
-                                                        <g id="Literature-Review" transform="translate(0.000000, 160.000000)">
-                                                            <polygon id="Box" fill="#E8ECF0" points="0 0 150 20 300 0 300 150 150 170 0 150"></polygon>
-                                                            <text font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
-                                                                <tspan x="52.4348957" y="94">Literature Review</tspan>
-                                                            </text>
-                                                        </g>
-                                                        <g id="Subject-Matter-Expert-Interviews" transform="translate(0.000000, 320.000000)">
-                                                            <polygon id="Box" fill="#E8ECF0" points="0 0 150 20 300 0 300 150 150 170 0 150"></polygon>
-                                                            <text id="Empathy-Exercise" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
-                                                                <tspan x="49.9147134" y="94">Empathy Exercise</tspan>
-                                                            </text>
-                                                        </g>
-                                                        <g id="Literature-Review" transform="translate(0.000000, 480.000000)">
-                                                            <path d="M0,0 L150,20 L300,0 L300,150 C230.729542,150 180.729542,150 150,150 C119.270458,150 69.2704582,150 0,150 L0,0 Z" id="Box" fill="#E8ECF0"></path>
-                                                            <text id="Affinity-Clustering" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
-                                                                <tspan x="48.6041665" y="89">Affinity Clustering</tspan>
-                                                            </text>
-                                                        </g>
-                                                    </g>
-                                                    <g id="Research-Insights" transform="translate(350.000000, 143.000000)">
-                                                        <rect id="Box" fill="#FAECE9" x="0" y="0" width="300" height="630"></rect>
-                                                        <text id="5-Secondary-Research" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
-                                                            <tspan x="77.8832267" y="308">5 Secondary </tspan>
-                                                            <tspan x="48.7250235" y="336">Research Insights</tspan>
-                                                        </text>
-                                                    </g>
-
-                                                </g>
-
-
-                                                <g id="Contextual-Inquiry-Information" transform="translate(750.000000, 0.000000)">
-                                                    <text id="Contextual-Inquiry" font-family=".SFNSDisplay, .SF NS Display" font-size="48" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
-                                                        <tspan x="0" y="46">Contextual Inquiry</tspan>
-                                                    </text>
-                                                    <tspan class="offscreen" id="play-description">List of methods for contextual inquiry</tspan>
-                                                    <g id="Contextual-Inquiry-Research-Strategies" transform="translate(0.000000, 143.000000)">
-
-
-
-                                                        <g id="Subject-Matter-Expert-Interviews">
-                                                            <polygon id="Box" fill="#E8ECF0" points="0 0 300 0 300 150 150 170 0 150"></polygon>
-                                                            <text id="Interviews-with-Peop" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
-                                                                <tspan x="65.3066405" y="63">Interviews with </tspan>
-                                                                <tspan x="46.7460936" y="91">People with Visual </tspan>
-                                                                <tspan x="80.0462238" y="119">Impairments</tspan>
-                                                            </text>
-                                                        </g>
-                                                        <g id="Literature-Review" transform="translate(0.000000, 160.000000)">
-                                                            <polygon id="Box" fill="#E8ECF0" points="0 0 150 20 300 0 300 150 150 170 0 150"></polygon>
-                                                            <text id="Interviews-with-Sigh" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
-                                                                <tspan x="65.3066405" y="63">Interviews with </tspan>
-                                                                <tspan x="58.8789061" y="91">Sighted Finance </tspan>
-                                                                <tspan x="107.553385" y="119">Experts</tspan>
-                                                            </text>
-                                                        </g>
-                                                        <g id="Literature-Review" transform="translate(0.000000, 320.000000)">
-                                                            <polygon id="Box" fill="#E8ECF0" points="0 0 150 20 300 0 300 150 150 170 0 150"></polygon>
-                                                            <text id="Interview-Interpreta" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
-                                                                <tspan x="98.7773437" y="63">Interview </tspan>
-                                                                <tspan x="74.0423176" y="91">Interpretation </tspan>
-                                                                <tspan x="99.5149739" y="119">Sessions</tspan>
-                                                            </text>
-                                                        </g>
-                                                        <g id="Subject-Matter-Expert-Interviews" transform="translate(0.000000, 480.000000)">
-                                                            <polygon id="Box" fill="#E8ECF0" points="0 0 150 20 300 0 300 150 0 150"></polygon>
-                                                            <text id="Affinity-Diagramming" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
-                                                                <tspan x="31.2434894" y="78">Affinity Diagramming</tspan>
-                                                            </text>
-                                                        </g>
-                                                    </g>
-                                                    <g id="Contextual-Inquiry-Insights" transform="translate(350.000000, 143.000000)">
-                                                        <rect id="Box" fill="#FAECE9" x="0" y="0" width="300" height="630"></rect>
-                                                        <text id="6-Primary-Research-I" font-family=".SFNSDisplay, .SF NS Display" font-size="24" font-weight="normal" letter-spacing="0.666666687" fill="#000000">
-                                                            <tspan x="95.0205965" y="308">6 Primary</tspan>
-                                                            <tspan x="48.7250235" y="336">Research Insights</tspan>
-                                                        </text>
-                                                    </g>
-                                                </g>
-
-                                                <!--                    end text content -->
-                                            </g>
-
-
-                                            <g id="Group-2" transform="translate(588.000000, 163.000000)" stroke="#000000">
-                                                <polygon id="Triangle" fill="#000000" points="408 51 400 35 416 35"></polygon>
-                                                <polygon id="Triangle" fill="#000000" transform="translate(8.000000, 43.000000) rotate(-180.000000) translate(-8.000000, -43.000000) " points="8 51 0 35 16 35"></polygon>
-                                                <polyline id="Path-2" transform="translate(208.000000, 25.608806) rotate(-180.000000) translate(-208.000000, -25.608806) " points="8 0.608806214 8 50.6088062 408 50.6088062 408 0.608806214"></polyline>
-                                            </g>
-                                            <g id="Arrow" transform="translate(238.000000, 843.000000)" stroke="#000000">
-                                                <polygon id="Triangle" fill="#000000" points="358 1 366 17 350 17"></polygon>
-                                                <polygon id="Triangle" fill="#000000" points="8 17 0 1 16 1"></polygon>
-                                                <polyline id="Path-2" transform="translate(183.000000, 25.608806) rotate(-360.000000) translate(-183.000000, -25.608806) " points="8 0.608806214 8 50.6088062 358 50.6088062 358 0.608806214"></polyline>
-                                            </g>
-                                            <g id="Arrow" transform="translate(996.000000, 843.000000)" stroke="#000000">
-                                                <polygon id="Triangle" fill="#000000" points="358 1 366 17 350 17"></polygon>
-                                                <polygon id="Triangle" fill="#000000" points="8 17 0 1 16 1"></polygon>
-                                                <polyline id="Path-2" transform="translate(183.000000, 25.608806) rotate(-360.000000) translate(-183.000000, -25.608806) " points="8 0.608806214 8 50.6088062 358 50.6088062 358 0.608806214"></polyline>
-                                            </g>
-
-                                            <!--                end svg-try-->
-                                        </g>
-                                        <!--            end page 1-->
-                                    </g>
-                                    <!--        end timeline-->
-                                </g>
-
-                            </svg>
+                    <h1 tabindex="0">Our Design Process</h1>
+                    <div class="fixed-body">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Idea Generation</a></li>
+                            <li><a href="#">Rapid Prototyping</a></li>
+                            <li><a href="">Iterative Design</a></li>
+                        </ol>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dignissimos rerum nisi nobis commodi doloremque alias omnis reprehenderit voluptatem fugit voluptatibus, eveniet, quidem molestiae earum veritatis. Possimus fuga necessitatibus iste ea harum exercitationem facilis placeat consectetur ipsam quasi rem laboriosam ipsum, commodi odit eligendi amet debitis saepe at quo, quam aspernatur, facere voluptates totam. Explicabo tenetur aut suscipit dicta ea cumque quae dolor cupiditate, laborum eum veritatis laudantium necessitatibus aperiam pariatur voluptatibus repellendus. Nobis id eligendi at ratione quae rem laboriosam necessitatibus velit praesentium architecto. Officiis magni fugit odio quasi nam quia at eaque rem et velit ratione, quo similique?</p>
                     </div>
+
+
+
                 </div>
             </div>
-        </div>
+    </div>
 
         <section class="header-sec" id="ideate">
             <div class="row">
@@ -354,7 +218,7 @@
 
                 </div>
                 <div class="col-sm-3">
-<!--
+                    <!--
                     <img src="img/Screen%20Shot%202017-07-18%20at%203.14.26%20PM.png" class="img-responsive">
                     <figcaption class="caption">A team member uses a dial on a desktop to navigate a stock chart.
                     </figcaption>
@@ -366,8 +230,9 @@
 
             </div>
         </section>
+        <section>
             <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
+                <div class="col-sm-8 col-sm-offset-2">
                     <img src="img/task-final.png" class="img-responsive">
                     <img src="img/user-flow.png" class="img-responsive">
                     <img src="img/latest-cue.png" class="img-responsive">
@@ -397,33 +262,17 @@
 
 </body>
 
-<footer role="contentinfo">
-    <div class="row">
-        <div class="col-sm-1">
-            <h3>Team b7g</h3>
-        </div>
-        <div class="col-sm-10">
-            <p>We are a team of five Carnegie Mellon University Master’s of Human Computer Interaction students. We have been working with Bloomberg, LP to help make financial visualizations more accessible to people with visual impairments. This product is the culmination of eight months of research and design.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-1">
-            <h3>Sponsors</h3>
-        </div>
-        <div class="col-sm-10">
-            <p>Bloomberg, LP</p>
-            <p>Carnegie Mellon University</p>
-        </div>
-    </div>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/script.js" async></script>
-    <!--    </div>-->
 
-</footer>
+<div id="footer">
+
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#footer").load("footer.html");
+    });
+</script>
 
 
 </html>

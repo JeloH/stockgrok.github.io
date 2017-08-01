@@ -16,134 +16,124 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/style.css">
 
-
-
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/script.js" async></script>
+    <!--    </div>-->
 </head>
-<nav role="navigation">
-    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">b7g</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="research.html">Research</a></li>
-            <li><a href="design.html">Design</a></li>
-            <li><a class="active" href="#">Next Steps</a></li>
-            <li><a href="team-b7g.html">Team b7g</a></li>
-        </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-    <!-- /.container-fluid -->
 
-</nav>
+<div id="nav">
+
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#nav").load("nav.html");
+    });
+</script>
 
 <body>
 
     <div class="container-div" role="main" id="content">
-        <div class="row svg-row">
-            <div class="col-sm-4 col-sm-offset-2">
+
+            <div class="col-sm-8 col-sm-offset-2">
                 <div class="skip-overview">
                     <h1 tabindex="0">Next Steps</h1>
-                    <a href="#vui">
-                        <p>Voice User Interface</p>
-                    </a>
-                    <a href="#indi">
-                        <p>Multiple Technical Indicators</p>
-                    </a>
-                    <a href="#scrub">
-                        <p>Desktop Scrubbing</p>
-                    </a>
-                    <a href="#haptic">
-                        <p>Haptic Graphs</p>
-                    </a>
 
-                   
+                    <div class="fixed-body">
+                        <ol class="breadcrumb">
+                            <li><a href="#vui">Voice User Interface</a></li>
+                            <li><a href="#indi">Multiple Technical Indicators</a></li>
+                            <li><a href="#scrub">Desktop Scrubbing</a></li>
+                            <li><a href="#haptic">Haptic Graphs</a></li>
+                        </ol>
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eaque non debitis. Cupiditate quidem odio consectetur pariatur nam eaque nesciunt enim fuga, accusantium quam voluptatibus at, iure distinctio modi facilis repudiandae, est officia ducimus, veritatis. Odio impedit, architecto recusandae maxime ullam. Inventore ipsam facilis alias error nesciunt voluptatibus. Aspernatur iure vero voluptates, libero fugit vitae blanditiis quam facilis assumenda omnis nesciunt! Quia unde odit vel hic debitis, fugiat quisquam nostrum et pariatur! Voluptatibus perferendis quis cupiditate dolorum quam quod recusandae veniam facere neque placeat, repudiandae officiis labore. Numquam quia laborum rem repellendus, tenetur, reiciendis molestias asperiores inventore deleniti et aspernatur!
+                    </p>
+
+
+
                 </div>
             </div>
+
+    </div>
+
+    <section class="header-sec">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-2">
+                <h1 tabindex="0">Future Opportunities</h1>
+            </div>
+            <!--
+                <div class="col-sm-2">
+                    <img class="img-responsive" src="img/secondary%20cover.png" alt="">
+                </div>
+-->
         </div>
-
-        <section class="header-sec">
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h1 tabindex="0">Future Opportunities</h1>
-                </div>
-                <!--
+    </section>
+    <section id="vui">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-2">
+                <h2 tabindex="0">Voice User Interface</h2>
+                <p tabindex="0">While b7g is a big power up in allowing people with visual impairments to access context and details in financial visualizations, we envision a future where people true nonlinear access to information is a reality. A user would simply ask a voice user interface to bring them exactly where they need to be on a page. Such a system would also be capable of performing comparisons and doing math for the user, to minimize cognitive overload. Challenges would include keeping the user informed of where they are on a page, or how they might toggle back through nonlinear exploration.
+                </p>
+            </div>
+            <!--
                 <div class="col-sm-2">
                     <img class="img-responsive" src="img/secondary%20cover.png" alt="">
                 </div>
 -->
+        </div>
+    </section>
+    <section id="indi">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-2">
+                <h2 tabindex="0">Multiple Technical Indicators</h2>
+                <p tabindex="0">Having access to technical indicators is a must for professionals who employ technical analysis as a part of their investment strategy. While hearing the distance from one moving average is a major step up in making more confident predictions about future price movements, many sighted technical analysts are comparing price to multiple moving averages, or other indicators, entirely. These simultaneous comparisons are done in part to establish levels of support and resistance (i.e. price floors and ceilings), and help people create more compelling and grounded arguments. We envision a solution that goes beyond playing multiple sonified lines in stereo to help chunk multiple line comparisons at once.
+
+                </p>
             </div>
-        </section>
-        <section id="vui">
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h2 tabindex="0">Voice User Interface</h2>
-                    <p tabindex="0">While b7g is a big power up in allowing people with visual impairments to access context and details in financial visualizations, we envision a future where people true nonlinear access to information is a reality. A user would simply ask a voice user interface to bring them exactly where they need to be on a page. Such a system would also be capable of performing comparisons and doing math for the user, to minimize cognitive overload. Challenges would include keeping the user informed of where they are on a page, or how they might toggle back through nonlinear exploration.
-</p>
-                </div>
-                <!--
+            <!--
                 <div class="col-sm-2">
                     <img class="img-responsive" src="img/secondary%20cover.png" alt="">
                 </div>
 -->
-            </div>
-        </section>
-        <section id="indi">
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h2 tabindex="0">Multiple Technical Indicators</h2>
-                    <p tabindex="0">Having access to technical indicators is a must for professionals who employ technical analysis as a part of their investment strategy. While hearing the distance from one moving average is a major step up in making more confident predictions about future price movements, many sighted technical analysts are comparing price to multiple moving averages, or other indicators, entirely. These simultaneous comparisons are done in part to establish levels of support and resistance (i.e. price floors and ceilings), and help people create more compelling and grounded arguments. We envision a solution that goes beyond playing multiple sonified lines in stereo to help chunk multiple line comparisons at once.
+        </div>
+    </section>
+    <section id="scrub">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-2">
+                <h2 tabindex="0">Desktop Scrubbing</h2>
+                <p tabindex="0">The scrubbing motion on smartphones is immensely powerful for people with visual impairments because unlike a computer screen, position on a phone is fixed. Unfortunately, this technology doesn’t currently translate very well to desktop in an industry where simultaneous access to multiple screens worth of information and desktop computing power is needed to effectively do one’s job. As such, people with visual impairments still struggle with the same positioning issues, or stick to linear navigation via screen readers.. We want to make a call to the world of emerging technologies to create a desktop answer to mobile scrubbing. In the interim, hooking up a phone to a computer might represent a step in the right direction, but the relative positioning problem of computer is not going to go away.
 
-</p>
-                </div>
-                <!--
+                </p>
+            </div>
+            <!--
                 <div class="col-sm-2">
                     <img class="img-responsive" src="img/secondary%20cover.png" alt="">
                 </div>
 -->
-            </div>
-        </section>
-        <section id="scrub">
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h2 tabindex="0">Desktop Scrubbing</h2>
-                    <p tabindex="0">The scrubbing motion on smartphones is immensely powerful for people with visual impairments because unlike a computer screen, position on a phone is fixed. Unfortunately, this technology doesn’t currently translate very well to desktop in an industry where simultaneous access to multiple screens worth of information and desktop computing power is needed to effectively do one’s job. As such, people with visual impairments still struggle with the same positioning issues, or stick to linear navigation via screen readers.. We want to make a call to the world of emerging technologies to create a desktop answer to mobile scrubbing. In the interim, hooking up a phone to a computer might represent a step in the right direction, but the relative positioning problem of computer is not going to go away.
+        </div>
+    </section>
+    <section id="haptic">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-2">
+                <h2 tabindex="0">Haptic Graphs</h2>
+                <p tabindex="0">Ultimately, sound is just one way of transcribing visual data in another modality. We spoke with some very forward-thinking researchers at Carnegie Mellon who are making great strides towards the ultimate goal of being able to dynamically simulate shapes and textures. We believe that dynamically generated haptic graphs would revolutionize not only the access people with visual impairments have to financial information, but anything else in their physical or digital environment, too. From a finance lens, it is currently possible to 3D print tactile graphs; however, there is as of yet no solution that reconciles the detail a financial graph would have to convey, with the on-the-fly speed at which financial professionals, especially day traders, need access to real time information.
 
-</p>
-                </div>
-                <!--
+                </p>
+            </div>
+            <!--
                 <div class="col-sm-2">
                     <img class="img-responsive" src="img/secondary%20cover.png" alt="">
                 </div>
 -->
-            </div>
-        </section>
-        <section id="haptic">
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h2 tabindex="0">Haptic Graphs</h2>
-                    <p tabindex="0">Ultimately, sound is just one way of transcribing visual data in another modality. We spoke with some very forward-thinking researchers at Carnegie Mellon who are making great strides towards the ultimate goal of being able to dynamically simulate shapes and textures. We believe that dynamically generated haptic graphs would revolutionize not only the access people with visual impairments have to financial information, but anything else in their physical or digital environment, too. From a finance lens, it is currently possible to 3D print tactile graphs; however, there is as of yet no solution that reconciles the detail a financial graph would have to convey, with the on-the-fly speed at which financial professionals, especially day traders, need access to real time information.
-
-</p>
-                </div>
-                <!--
-                <div class="col-sm-2">
-                    <img class="img-responsive" src="img/secondary%20cover.png" alt="">
-                </div>
--->
-            </div>
-        </section>
+        </div>
+    </section>
 
 
-<!--
+    <!--
         <section>
             <div class="row">
                 <div class="col-sm-5 col-sm-offset-2">
@@ -158,35 +148,20 @@
 
     </div>
 
+
 </body>
 
-<footer role="contentinfo">
-    <div class="row">
-        <div class="col-sm-1">
-            <h3>Team b7g</h3>
-        </div>
-        <div class="col-sm-10">
-            <p>We are a team of five Carnegie Mellon University Master’s of Human Computer Interaction students. We have been working with Bloomberg, LP to help make financial visualizations more accessible to people with visual impairments. This product is the culmination of eight months of research and design.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-1">
-            <h3>Sponsors</h3>
-        </div>
-        <div class="col-sm-10">
-            <p>Bloomberg, LP</p>
-            <p>Carnegie Mellon University</p>
-        </div>
-    </div>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/script.js" async></script>
-    <!--    </div>-->
+<div id="footer">
 
-</footer>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#footer").load("footer.html");
+    });
+</script>
+
 
 
 </html>
