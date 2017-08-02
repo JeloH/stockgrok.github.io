@@ -184,6 +184,9 @@
 // });
 
 $(function () {
+
+    $(".video").fitVids();
+
     $('.image-modal').modaal({
         type: 'image'
     });
