@@ -185,7 +185,8 @@
 
 $(function () {
 
-    $(".video").fitVids();
+    // $(".video").fitVids();
+    $(".container").fitVids();
 
     $('.image-modal').modaal({
         type: 'image'
