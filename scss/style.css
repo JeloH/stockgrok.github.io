@@ -5,7 +5,6 @@
   box-sizing: border-box; }
 
 html {
-  font-family: 'yrsa', serif;
   font-family: 'Roboto', serif;
   font-style: normal;
   font-weight: 400; }
@@ -56,7 +55,7 @@ h2 {
 
 h1, h2, h3 {
   line-height: 55px;
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 h3 {
   font-size: 1em;
@@ -112,10 +111,10 @@ h3 {
   color: black; }
 
 .navbar-brand {
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 .navbar-brand:hover {
-  border-bottom: #ffffff solid 3px;
+  color: #ff5722;
   font-weight: 600; }
 
 .breadcrumb > li {
@@ -135,11 +134,10 @@ h3 {
   .skip-overview h1 {
     color: #ff5722 !important; }
 
-.navbar-right {
-  margin-bottom: -15px; }
-
 .navbar-right:hover a:hover {
-  border-bottom: #ffffff solid 3px; }
+  border-bottom: #ffffff solid 3px;
+  background-color: #000051 !important;
+  color: white; }
 
 .container-div {
   height: 100vh;
@@ -183,7 +181,7 @@ footer {
 
 body {
   font-weight: 300;
-  font-family: 'yrsa', serif;
+  font-family: 'Roboto', serif;
   font-size: 20px;
   color: #333;
   overflow: scroll;
