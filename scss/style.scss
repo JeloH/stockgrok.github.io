@@ -1,13 +1,23 @@
 //ONLY USE THIS FILE
-$brand-blue-100: #000051;
+$brand-blue-100: #0A2A49;
 $brand-blue-50: #7F7FA8;
 $brand-blue-10: #E5E5ED;
-$brand-red-100: #ff5722;
+
+$brand-red-100: #D64A28;
+$brand-orange-100: #F79220;
+$brand-aqua-100: #1A617E;
+
 $brand-red-50: #FFAB90;
 $brand-red-10: #FFEEE8;
 $background-red: #FAECE9;
+
 $light-gray: #eee;
 $background-gray: #E8ECF0;
+
+
+
+
+
 ////////////////////////////////////////////To-do:////////////////////////////////////////////
 //  Change brand hover color 
 //  Make hover blue consistent
@@ -71,6 +81,30 @@ h2{
   margin: 0;
 }
 
+.cta {
+ 
+    h3{
+        color: $brand-red-100;
+    }
+    h3:hover {
+        color: $brand-orange-100;
+    }
+    
+}
+
+.cta:hover {
+        text-decoration: none;
+}
+
+a:hover {
+    color: $brand-blue-100;
+    text-decoration: none;
+    
+}
+
+.newspaper {
+    column-count: 2;
+}
 
 h1 {
     color: $brand-red-100;
@@ -79,8 +113,10 @@ h1 {
 
 h1,
 h2 {
-    margin-bottom: 36px;
+    margin-bottom: 16px;
 }
+
+
 
 h1,h2,h3 {
     line-height: 55px;
@@ -92,6 +128,16 @@ h3 {
     font-size: 1em;
     font-weight: 600;
 }
+
+h4 {
+    color: $brand-orange-100;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+
 
 p,
 li {
@@ -106,6 +152,89 @@ ol {
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
+////////////// nav and footer stuff //////////////
+
+.navbar-right {
+//    margin-bottom: -15px;
+}
+
+.navbar-right:hover {
+    a:hover {
+//        border-bottom: #ffffff solid 3px;
+        background-color: $brand-blue-100 !important;
+        color: white;
+    }
+}
+
+.navbar-right:hover {
+    a:hover:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 100%; /* Change this to whatever width you want. */
+    padding-top: 5px; /* This creates some space between the element and the border. */
+    border-bottom: #ffffff solid 3px;
+    }
+}
+
+.active:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 100%; /* Change this to whatever width you want. */
+    padding-top: 5px; /* This creates some space between the element and the border. */
+    border-bottom: #ffffff solid 3px;
+    }
+
+
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-brand:hover {
+    color: $brand-orange-100;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.index-nav {
+    border-bottom: $brand-aqua-100 solid 8px;
+}
+
+nav,
+footer {
+    background-color: $brand-blue-100;
+    a,
+    p, li {
+        color: #ffffff;
+        font-size: 18px;
+    }
+    
+    h3 {
+        color: white;
+        margin-top: 8px;
+    }
+}
+
+footer {
+    border-top: $brand-aqua-100 solid 8px;
+}
+
+nav {
+//    border-bottom: $brand-red-100 4px solid;
+}
+
+footer {
+    padding: 20px 30px;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+////////////// nav and footer end //////////////
+
 
 .header-sec {
 //    h1 {
@@ -134,6 +263,10 @@ dialog {
 
 .no-scroll {
     overflow: hidden;
+}
+
+.highlight {
+    border-bottom: $brand-orange-100 4px solid;
 }
 
 
@@ -172,14 +305,6 @@ h3 {
     color: black;
 }
 
-.navbar-brand {
-    font-family: 'Roboto', sans-serif;
-}
-.navbar-brand:hover {
-    color: $brand-red-100;
-    font-weight: 600;
-
-}
 
 //.fixed-body {
 //    position: fixed;
@@ -189,42 +314,66 @@ h3 {
 }
 
 .breadcrumb {
-    background-color: $brand-blue-10;
+    background-color: $brand-blue-100;
+    font-size: 16px;
     a {
-        color: $brand-blue-100;
+        color: #ffffff;
+    }
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border-radius: 0;
+    padding: 20px 20px 20px 0;
+    text-transform: uppercase;
+    
+
+    .glyphicon-chevron-right {
+        color: #ffffff;
+        padding:  0 10px;
+    }
+    li,span{
+        float: left;
+    }
+    a:hover {
+        text-decoration: none;
+        color: $brand-orange-100;
     }
 }
 
-.navbar-brand {
-    font-weight: 600;
-    color: white;
+.sec-head {
+    background-color: $brand-aqua-100;
+    h2 {
+        color: #ffffff; 
+        margin-bottom: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    margin: 0;
+        padding: 0px 0 0 0;
+    
 }
+
+.sec-head-end {
+     @extend .sec-head;
+    background-color: $brand-orange-100;
+}
+
 
 .skip-overview {
-    margin-top: 100px;
+//    margin-top: 100px;
     h1 {
-        color: $brand-red-100 !important;
+        color: #ffffff !important;
     }
 }
 
-.navbar-right {
-//    margin-bottom: -15px;
-
+.skip-overview, .sec-head {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.navbar-right:hover {
-    a:hover {
-        border-bottom: #ffffff solid 3px;
-        background-color: $brand-blue-100 !important;
-        color: white;
-
-
-    }
-}
 
 .container-div {
 
-    height: 100vh;
+//    height: 80vh;
     background-color: $brand-blue-100;
     p {     
         color: $brand-blue-10;
@@ -239,38 +388,20 @@ section {
     padding: 1px 0 10px 0;
 }
 
-section:nth-child(even) {
-    background-color: $background-gray;
-}
+//section:nth-child(even) {
+//    background-color: $background-gray;
+//}
 
-nav,
-footer {
-    background-color: $brand-blue-100;
-    a,
-    p, li {
-        color: #ffffff;
-        font-size: 18px;
-    }
-    .active {
-        background-color: $brand-red-10;
-        color: $brand-blue-100;
-    }
-    h3 {
-        color: white;
-        margin-top: 8px;
-    }
-}
-
-nav {
-//    border-bottom: $brand-red-100 4px solid;
-}
-
-footer {
-    padding: 20px 30px;
-    bottom: 0px;
-    width: 100%;
-    margin-top: 40px;
-}
+//section {
+//    border-left: $brand-red-100 3px solid;
+//    }
+//
+//section:not(.header-sec):nth-child(odd) {
+//    border-left: {
+//        color: $brand-orange-100 3px solid;
+//    }
+//}
+//
 
 .pop:hover {
     opacity: .5;

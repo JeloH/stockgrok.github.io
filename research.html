@@ -29,12 +29,34 @@
 
 </div>
 
-<script type="text/javascript">
- $(function(){
- $("#nav").load("nav.html"); 
- });
-</script>
-
+<nav role="navigation">
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Stockgrok</a>
+        </div>
+        <div class="navbar-header navbar-right">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="product.html">Product</a>
+            <a class="navbar-brand active" href="research.html">Research</a>
+            <a class="navbar-brand" href="design.html">Design</a>
+            <a class="navbar-brand" href="next-steps.html">Opportunities</a>
+            <a class="navbar-brand" href="team-b7g.html">Team b7g</a>
+        </div>
+    </div>
+</nav>
 
 <!--
 <nav role="navigation" class="page-content">
@@ -69,272 +91,250 @@
 <body>
 
     <div class="container-div" role="main" id="content">
-        <div class="svg-row">
+        <div class="row skip-overview">
             <div class="col-sm-8 col-sm-offset-2">
-                <div class="skip-overview">
-                    <h1 tabindex="0">Our Research Process</h1>
-    <div class="fixed-body">
-        <ol class="breadcrumb">
-            <li><a href="#">Empathy in Context</a></li>
-            <li><a href="#">Problem Spaces</a></li>
-            <li><a href="">User Research</a></li>
-            <li><a href="">Insights</a></li>
-        </ol>
+                <h1 tabindex="0">Our Research Process</h1>
+
+                <p>Coming into this project, our team of five designers had very little experience with finance or accessibility. The challenge in the research phase was to gain a solid grasp on both the accessibility and finance domains. We began with a secondary research phase, which consisted of empathy exercises, literature review, and interviews with accessibility subject matter experts. With this foundation in place, we conducted a contextual inquiry, which focuses on speaking with people in the context of their recent experiences as applicable to the domain. We interviewed both people with visual impairments and sighted finance experts, using the affinity diagramming method to find patterns across the notes we took during all of these interactions. We ended up with six key insights that helped guide the idea generation process that followed.
+                </p>
+
+                <ol class="breadcrumb">
+
+                    <li><a href="#empathy">Empathy in Context</a></li>
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <li><a href="#prob">Problem Spaces</a></li>
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <li><a href="#uxr">User Research</a></li>
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <li><a href="#insights" class="highlight">Six Insights</a></li>
+                </ol>
+            </div>
+        </div>
     </div>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae necessitatibus numquam cupiditate consectetur animi quas, quo perspiciatis facere, incidunt laudantium reiciendis corporis repellat consequatur sequi, error sed optio, a quisquam sit molestiae culpa eum libero expedita. Ratione aliquid autem, minus eveniet tempora, sapiente atque cupiditate perferendis recusandae asperiores quidem facere ducimus quas repellat laboriosam quos ipsum maiores molestias deleniti. Corrupti sunt alias facilis maxime, consequuntur mollitia incidunt odio sint eaque, fugiat nisi, fugit a, neque. Quasi voluptatum nostrum inventore nulla minima fugit deserunt blanditiis numquam, earum, delectus deleniti. Dolorem nulla asperiores dolores. Mollitia ducimus in, unde reprehenderit dignissimos cupiditate amet.</p>
-                    </div>
-                </div>
+    <div class="row sec-head" id="empathy">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h2>Empathy in context</h2>
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div>
+            <div class="col-sm-8 col-sm-offset-2">
+                <p tabindex="0">A large part of being user experience designers is developing empathy for our users. As five sighted designers, we wanted to better understand the day-to-day relationship between a person with a visual impairment and technology.</p>
             </div>
         </div>
 
-        <section class="header-sec" id="secondary">
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h1 tabindex="0">Secondary Research</h1>
-                    <p tabindex="0">During the first two months of our project, we sought to understand how to design for accessibility. We spoke with accessibility subject matter experts, conducted an in-depth literature review, designed and participated in a context-driven empathy exercise, and finally produced a secondary research report, which outlines our initial findings and how we got to them. You can find an accessible version of our secondary research report here:</p>
-                    <button type="button" class="btn btn-default btn-lg">Accessible Secondary Research Report</button>
-                    <br>
-                    <br>
-                    <p>An in-depth look at our secondary research process follows.</p>
-                </div>
-                <!--
-                <div class="col-sm-2">
-                    <img class="img-responsive" src="img/secondary%20cover.png" alt="">
-                </div>
+        <section>
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3>Reducing bias with disability simulations</h3>
+            </div>
+        </section>
+        <section>
+            <div class="col-sm-8 col-sm-offset-2 newspaper">
+
+                <p tabindex="0">
+                    As five sighted designers designing for people with visual impairments, we sought ways to confront our misconceptions about the abilities and disabilities of our target users. We first researched best practices for empathy exercises (also known as disability simulations), and learned that empathy exercises should be created and run in context of the tasks and tools in question, with the knowledge that people who are blind develop expert skills for adapting to the world without sight – skills which can't be approximated through a few minutes with a blindfold.
+                </p>
+                <p>In this way, we focused on learning how to use the Apple VoiceOver screen reader to check our own financial information. This experience helped us approximate the pain points of our specific problem space without making any claims at understanding the full lived experiences of people with visual impairment. Our team experienced firsthand many common difficulties while navigating finance applications with VoiceOver: difficulties that would soon be validated and echoed in our interviews with visually impaired screen reader users.
+
+                </p>
+                <img class="img-responsive" src="img/other-Empathy-Exercise.jpg" alt="">
+            </div>
+
+        </section>
+        <section>
+            <div class="col-sm-4">
+
+                <p tabindex="0">
+
+                </p>
+            </div>
+
+
+        </section>
+
+    </div>
+
+    <div class="row sec-head" id="prob">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h2>Problem Spaces</h2>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <section>
+            <div class="col-sm-8 col-sm-offset-2">
+                <p tabindex="0">Visual impairment in finance requires a solid understanding of two disparate domains. We sought to become, ourselves, financially literate to the extent that we might be able to understand various parts of a finance professional’s workflow. At the same time, we sought to develop a solid foundation in the accessibility world.
+                </p>
+            </div>
+
+        </section>
+        <!--
+        <section>
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3>Literature review for accessibility</h3>
+                <p tabindex="0" class="newspaper">
+                    There’s a wealth of research and writing about accessibility. We conducted a literature review into both technological developments in accessibility, and the pain points people with visual impairments face in the workplace. Since many interfaces for people with visual impairments are not screen-based, we found it useful to undertake a survey of the existing emerging technologies we might later leverage in our designs. In addition, we also took many valuable insights from this process, including a strong understanding of how design decisions alter the workflow of people with visual impairments, how they decide to adopt new technologies (or not!), and a better knowledge of the experience of people with visual impairments in the workplace.
+                </p>
+            </div>
 -->
-            </div>
-        </section>
-
         <section>
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h2 tabindex="0">Subject Matter Expert Interviews</h2>
-                    <p tabindex="0">Nobody on our team had previous experience designing for accessibility, so we began by speaking to experts in the accessibility field to better understand the lay of the land, learn existing accessibility design principles, and be aware of the insights academic researchers and designers had previously set forth.
-                    </p>
-
-                </div>
+            <div class="col-sm-5 col-sm-offset-2">
+                <h3>Literature review for accessibility</h3>
             </div>
-        </section>
-        <section>
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h2 tabindex="0">Literature Review</h2>
-                    <p tabindex="0">We also conducted a literature review to better understand the accessibility field. We focused our review on academic papers promoting accessibility technology, ethnographic studies of people with visual impairments in the workplace, as well as emerging technologies as possible that we might be able to leverage for our final designs.
+            <div class="col-sm-8 col-sm-offset-2 newspaper">
+                <p tabindex="0">
+                    There’s a wealth of research and writing about accessibility. We conducted a literature review into both technological developments in accessibility, and the pain points people with visual impairments face in the workplace. Since many interfaces for people with visual impairments are not screen-based, we found it useful to undertake a survey of the existing emerging technologies we might later leverage in our designs.
+                </p>
 
-                    </p>
-
-                </div>
+                <p>In addition, we also took many valuable insights from this process, including a strong understanding of how design decisions alter the workflow of people with visual impairments, how they decide to adopt new technologies (or not!), and a better knowledge of the experience of people with visual impairments in the workplace.
+                </p>
+                <img class="img-responsive" src="img/clare-secondary.JPG" alt="">
             </div>
+            <div class="col-sm-4">
+            </div>
+
+
         </section>
         <section>
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h2 tabindex="0">Affinity Clustering</h2>
-                    <p tabindex="0">To help make sense of our wide-reaching interviews and literature review, we combined all of our notes and organized them, over time, into clusters representing emergent themes. Four main clusters arose from this process:
-                    </p>
-                    <ol>
-                        <li>Technology values of people with visual impairments, which focuses on how people with visual impairments adopt and use technologies, and the reoccurring pain points that occur with inaccessible technology</li>
-                        <li>Modes of data transfer, which focuses on how data is translated into different modalities (visual to aural or tactile), and how data is interpreted from these alternative senses
-                        </li>
-                        <li>Interpreting data, which focuses on the need for the context of data, as well as being able to access it in a timely manner</li>
-                        <li>General design, which focuses on the overlap between accessibility technology and general design principles</li>
-                    </ol>
-                    <p>
-                        From there, data is broken down into more discrete groups and individual notes in support of these clusters.
-                    </p>
-
-                </div>
-                <div class="col-sm-3">
-
-                    <div class="pop">
-
-                        <img src="img/secondary-affinity.png" class="img-responsive" alt="Clusters of post-it notes">
-                        <figcaption class="caption">Themes from secondary research on visual impairment and emerging technology</figcaption>
-                    </div>
-
-                    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                    <img src="" class="imagepreview" style="width: 100%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3>Interviews with subject matter experts</h3>
+                <p tabindex="0" class="newspaper">
+                    People in the accessibility world were excited to speak with us about our project, and transfer as much knowledge to us as they could. We had over ten calls and meetings with accessibility experts. These chats were invaluable in that they allowed us to ask every question we could possibly think of, pointed us in the direction of more resources, and served as valuable introductions to potential user groups.
+                </p>
             </div>
-        </section>
-        <section>
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h2 tabindex="0">Empathy Exercise</h2>
-                    <p tabindex="0">As sighted individuals designing for people with visual impairments, we found it necessary to put ourselves in the shoes of our potential users. We first researched best practices for empathy exercises (also known as disability simulations), and learned that we should be careful in how we ran one; specifically we came to the conclusion that empathy exercises should be created and run in context. In this way, we focused on learning how to use the Apple VoiceOver screen reader to check our own financial information. This experience helped us understand the pain points of our specific problem space, and helped prepare us to design specifically for visual accessibility in finance.
-                    </p>
-                </div>
-                <div class="col-sm-3">
 
 
-                    <img src="img/other-Empathy-Exercise.jpg" class="img-responsive" alt="A male's hand holding an iPhone with a black screen">
-                    <figcaption class="caption">This image depicts a member of the b7g team checking his bank account using the Apple VoiceOver system on an iPhone while blindfolded.</figcaption>
-
-
-                </div>
-            </div>
         </section>
 
-        <section class="header-sec" id="primary">
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h1 tabindex="0">Primary Research</h1>
-                    <p tabindex="0">During the next two months of our project, we conducted two contextual inquiries, in which we interviewed people relevant to our problem space, to better understand their workflows, and the breakdowns within. We spoke with people with visual impairments, as well as sighted finance experts. From there, we built an affinity diagram. We combined these insights with support from our secondary research to synthesize fifteen insights, six of which we presented to Bloomberg, as the most promising directions for our design direction.
-                    </p>
-                    <p>An in-depth look at our primary research process follows.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h2 tabindex="0">Contextual Inquiry with People with Visual Impairment</h2>
-                    <p tabindex="0">We spoke with people with visual impairments, focusing on how they interact with technologies, especially as the use pertains to checking financial information. We walked through how they recently accessed financial information, and in some cases, were able to speak in person, and observe the actual use. In the picture below, one interviewee uses his KNFB reader, a new assistive technology that takes text input from the physical world, and uses optical character recognition (OCR).
-                    </p>
-                </div>
-                <div class="col-sm-3">
-
-
-                    <img src="img/knfb.jpg" class="img-responsive">
-                    <figcaption class="caption">In this picture, an interviewee who is blind shows members of the B7G team how his KNFB reader helps him understand printed text in his surroundings (like a restaurant menu) that he might not otherwise have access to on his own.</figcaption>
-
-
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h2 tabindex="0">Contextual Inquiry with Sighted Finance Experts</h2>
-                    <p tabindex="0">We also aimed to understand the workflow of sighted finance experts, so that we might become more versed in financial professions. Given the breadth of the finance industry, we scoped our interviews to people who actively manage stock portfolios, be they professionals or personal traders. We walked through the process of buying and selling stocks, finding information about a security of interested, and the creation and interpretation of graphs on the Bloomberg Terminal, as well as Microsoft Excel.
-
-                    </p>
-                </div>
-                <div class="col-sm-3">
-
-
-                    <img src="img/28%20Excel%20Models.jpg" class="img-responsive">
-                    <figcaption class="caption">In this picture, an interviewee who is sighted shows a custom Excel spreadsheet to assess stock information.</figcaption>
-
-
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h2 tabindex="0">Affinity Diagramming</h2>
-                    <p tabindex="0">After each interview, we interpreted our notes and condensed them into discrete chunks that we used to make an affinity diagram. Affinity diagrams are used to synthesize insights out of large amounts of qualitative data. We combined our notes from our interviews with both user groups, and were excited to see overlap between both. Our most promising insights are explained in the next section.
-                    </p>
-                </div>
-                <div class="col-sm-3">
-
-
-                    <img src="img/affinity.jpg" class="img-responsive">
-                    <figcaption class="caption">A member of team B7G is adding a post-it note to the affinity diagram.</figcaption>
-
-
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h2 tabindex="0">Insights</h2>
-                    <p tabindex="0">Our affinity diagram yielded fifteen key insights — six of which we identified as offering the most fruitful design directions.
-                    </p>
-                    <ol>
-                        <li>
-                            <h3>People who help me are interfaces too.</h3>
-                            <p>The transfer of info by a sighted person is subject to that their interpretation and expertise.
-                            </p>
-                        </li>
-                        <li>
-                            <h3>My assistive technology only provides one piece of information at time.</h3>
-                            <p>It’s hard to view all parts of the puzzle at once because screen readers only provide one piece of information at a time.</p>
-                        </li>
-                        <li>
-                            <h3>I use charts as a communication tool.</h3>
-                            <p>Highlighting visual cues in charts is the easiest way to justify investment decisions.
-                            </p>
-                        </li>
-                        <li>
-                            <h3>There is no normal.</h3>
-                            <p>Both PWVI and finance experts depend on their idiosyncratic workflows to get things done.
-                            </p>
-                        </li>
-                        <li>
-                            <h3>Changing technology is difficult, so it better be worth it.</h3>
-                            <p>A product must offer a meaningful improvement to justify altering a hard-earned workflow.
-                            </p>
-                        </li>
-                        <li>
-                            <h3>I use visuospatial metaphors as mnemonics.</h3>
-                            <p>Visual and spatial references help bridge communication between sighted and blind colleagues.
-                            </p>
-                        </li>
-                    </ol>
-                </div>
-                <div class="col-sm-3">
-
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <h2 tabindex="0">Guiding Principles</h2>
-                    <p tabindex="0">From our insights, we also formed four guiding principles against which we felt it helpful to compare our future design ideas.
-
-                    </p>
-                    <ol>
-                        <li>
-                            <h3>Provide context for visualizations</h3>
-                            <p>A successful design might preprocess information about a visualization in order to quickly transfer the gist of a graph to people with visual impairments.
-                            </p>
-                        </li>
-                        <li>
-                            <h3>Provide control in data navigation</h3>
-                            <p>A successful design might allow people with visual impairments to access data nonlinearly, actively ask questions of a set of data, or traverse datasets quickly.</p>
-                        </li>
-                        <li>
-                            <h3>Provide communication and persuasion of data</h3>
-                            <p>A successful design might allow people with visual impairments to more effectively create visualizations, or facilitate communication with sighted colleagues as both discuss a financial chart.
-                            </p>
-                        </li>
-                        <li>
-                            <h3>Provide confidence in data accuracy</h3>
-                            <p>A successful design might drastically reduce the time people with visual impairments spend validating the accuracy of how data is laid out.
-                            </p>
-                        </li>
-                    </ol>
-                </div>
-                <div class="col-sm-3">
-
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <a href="design.html"><button type="button" class="btn btn-default btn-lg">Learn about our design process</button></a>
-                </div>
-            </div>
-        </section>
 
 
     </div>
+    <div class="row sec-head" id="uxr">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h2>User Research</h2>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <section>
+            <div class="col-sm-8 col-sm-offset-2">
+                <p tabindex="0">We used the contextual inquiry framework during user research. We spoke with both people with visual impairments, as well as sighted finance experts. We sought to better understand their workflows, specifically in the context of interacting with technology. We hosted interpretation sessions where we condensed these interviews into individual notes, and clustered notes from all sixteen interviews on an affinity diagram. From this diagram, we synthesized a number of insights across both the finance and accessibility domains.</p>
+                <h3>Contextual Inquiry Process</h3>
+                <img src="img/ci-all.png" alt="Description of the five steps of contextual inquiry process from left to right. One: Interviewing. Interview two user groups: sighted finance experts and visually impaired using finance tools. Two: Interpretation. Pull out key ideas, problems, and questions from interviews onto notes. Three: Affinity Diagramming. Cluster notes into themes that appear within and across user groups. Four: Modeling. Visualize the finance task flows, and cultural models for each user groups. Five: Visioning. Considering earlier findings, generate design ideas that address user needs." class="img-responsive">
+            </div>
+
+
+        </section>
+        <section>
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3>Literature review for accessibility</h3>
+                <p tabindex="0" class="newspaper">
+                    There’s a wealth of research and writing about accessibility. We conducted a literature review into both technological developments in accessibility, and the pain points people with visual impairments face in the workplace. Since many interfaces for people with visual impairments are not screen-based, we found it useful to undertake a survey of the existing emerging technologies we might later leverage in our designs. In addition, we also took many valuable insights from this process, including a strong understanding of how design decisions alter the workflow of people with visual impairments, how they decide to adopt new technologies (or not!), and a better knowledge of the experience of people with visual impairments in the workplace.
+                </p>
+            </div>
+
+
+        </section>
+        <section>
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3>Interviews with subject matter experts</h3>
+                <p tabindex="0" class="newspaper">
+                    People in the accessibility world were excited to speak with us about our project, and transfer as much knowledge to us as they could. We had (ten?) calls with accessibility experts. These chats were invaluable in that they allowed us to ask every question we could possibly think of, pointed us in the direction of more resources, and served as valuable introductions to potential user groups.
+                </p>
+            </div>
+
+
+        </section>
+
+
+
+    </div>
+
+    <div class="row sec-head-end" id="insights">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h2>Insights</h2>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <section>
+            <div class="col-sm-8 col-sm-offset-2">
+                <p tabindex="0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius molestias expedita repellendus, minus optio, enim a quaerat, nam quo ab commodi totam quae sapiente sint voluptate dignissimos non possimus illum.</p>
+            </div>
+
+
+        </section>
+        <section>
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3>Insights</h3>
+                <ol class="insight-ol" style="margin-top:0;">
+                    <li>
+                        <h4>People who help me are interfaces too.</h4>
+                        <p>The transfer of info by a sighted person is subject to that their interpretation and expertise.</p>
+                    </li>
+                    <li>
+                        <h4>My assistive technology only provides one piece of information at time. </h4>
+                        <p>It’s hard to view all parts of the puzzle at once because screen readers only provide one piece of information at a time.</p>
+                    </li>
+                    <li>
+                        <h4>I use charts as a communication tool.</h4>
+                        <p>Highlighting visual cues in charts is the easiest way to justify investment decisions.</p>
+                    </li>
+                    <li>
+                        <h4>There is no normal.</h4>
+                        <p>Both PWVI and finance experts depend on their idiosyncratic workflows to get things done.</p>
+                    </li>
+                    <li>
+                        <h4>Changing technology is difficult, so it better be worth it.</h4>
+                        <p>A product must offer a meaningful improvement to justify altering a hard-earned workflow.</p>
+                    </li>
+                    <li>
+                        <h4>I use visuospatial metaphors as mnemonics.</h4>
+                        <p>Visual and spatial references help bridge communication between sighted and blind colleagues.</p>
+                    </li>
+
+                    <!--
+My assistive technology only provides one piece of information at time. 
+It’s hard to view all parts of the puzzle at once because screen readers only provide one piece of information at a time.
+ 
+I use charts as a communication tool.
+Highlighting visual cues in charts is the easiest way to justify investment decisions.
+
+There is no normal.
+Both PWVI and finance experts depend on their idiosyncratic workflows to get things done.
+
+Changing technology is difficult, so it better be worth it.
+A product must offer a meaningful improvement to justify altering a hard-earned workflow.
+ 
+I use visuospatial metaphors as mnemonics.
+Visual and spatial references help bridge communication between sighted and blind colleagues.
+-->
+
+                </ol>
+
+            </div>
+
+        </section>
+        <section>
+            <div class="col-sm-8 col-sm-offset-2">
+                <a href="#content">
+                    <p><i class="glyphicon glyphicon-chevron-up"></i> Back to Top</p>
+                </a>
+            </div>
+        </section>
+
+
+
+    </div>
+
+
 
 </body>
 
@@ -343,9 +343,9 @@
 </div>
 
 <script type="text/javascript">
- $(function(){
- $("#footer").load("footer.html"); 
- });
+    $(function () {
+        $("#footer").load("footer.html");
+    });
 </script>
 
 

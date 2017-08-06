@@ -19,7 +19,7 @@ p {
   z-index: 3;
   width: 100%; }
   .page-content a {
-    color: #000051; }
+    color: #0A2A49; }
 
 section {
   position: relative;
@@ -45,13 +45,28 @@ h2 {
   padding: 0;
   margin: 0; }
 
+.cta h3 {
+  color: #D64A28; }
+.cta h3:hover {
+  color: #F79220; }
+
+.cta:hover {
+  text-decoration: none; }
+
+a:hover {
+  color: #0A2A49;
+  text-decoration: none; }
+
+.newspaper {
+  column-count: 2; }
+
 h1 {
-  color: #ff5722;
+  color: #D64A28;
   font-size: 50px; }
 
 h1,
 h2 {
-  margin-bottom: 36px; }
+  margin-bottom: 16px; }
 
 h1, h2, h3 {
   line-height: 55px;
@@ -60,6 +75,13 @@ h1, h2, h3 {
 h3 {
   font-size: 1em;
   font-weight: 600; }
+
+h4 {
+  color: #F79220;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-bottom: 0; }
 
 p,
 li {
@@ -72,6 +94,72 @@ ol {
   margin-top: 40px;
   margin-bottom: 40px; }
 
+.navbar-right:hover a:hover {
+  background-color: #0A2A49 !important;
+  color: white; }
+
+.navbar-right:hover a:hover:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 100%;
+  /* Change this to whatever width you want. */
+  padding-top: 5px;
+  /* This creates some space between the element and the border. */
+  border-bottom: #ffffff solid 3px; }
+
+.active:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 100%;
+  /* Change this to whatever width you want. */
+  padding-top: 5px;
+  /* This creates some space between the element and the border. */
+  border-bottom: #ffffff solid 3px; }
+
+.navbar-brand {
+  font-family: 'Roboto', sans-serif; }
+
+.navbar-brand:hover {
+  color: #F79220; }
+
+.navbar-brand {
+  color: white; }
+
+.index-nav {
+  border-bottom: #1A617E solid 8px; }
+
+nav,
+footer {
+  background-color: #0A2A49; }
+  nav a,
+  nav p, nav li,
+  footer a,
+  footer p,
+  footer li {
+    color: #ffffff;
+    font-size: 18px; }
+  nav h3,
+  footer h3 {
+    color: white;
+    margin-top: 8px; }
+
+footer {
+  border-top: #1A617E solid 8px; }
+
+footer {
+  padding: 20px 30px;
+  bottom: 0px;
+  width: 100%;
+  margin-top: 40px; }
+
 .caption {
   font-size: .8em;
   color: #aaa; }
@@ -83,6 +171,9 @@ dialog {
 /* removes scroll when modal is opened */
 .no-scroll {
   overflow: hidden; }
+
+.highlight {
+  border-bottom: #F79220 4px solid; }
 
 /* overlay covers everything */
 .modal-overlay {
@@ -110,71 +201,55 @@ h2,
 h3 {
   color: black; }
 
-.navbar-brand {
-  font-family: 'Roboto', sans-serif; }
-
-.navbar-brand:hover {
-  color: #ff5722;
-  font-weight: 600; }
-
 .breadcrumb > li {
   display: inline; }
 
 .breadcrumb {
-  background-color: #E5E5ED; }
+  background-color: #0A2A49;
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  border-radius: 0;
+  padding: 20px 20px 20px 0;
+  text-transform: uppercase; }
   .breadcrumb a {
-    color: #000051; }
+    color: #ffffff; }
+  .breadcrumb .glyphicon-chevron-right {
+    color: #ffffff;
+    padding: 0 10px; }
+  .breadcrumb li, .breadcrumb span {
+    float: left; }
+  .breadcrumb a:hover {
+    text-decoration: none;
+    color: #F79220; }
 
-.navbar-brand {
-  font-weight: 600;
-  color: white; }
+.sec-head, .sec-head-end {
+  background-color: #1A617E;
+  margin: 0;
+  padding: 0px 0 0 0; }
+  .sec-head h2, .sec-head-end h2 {
+    color: #ffffff;
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px; }
 
-.skip-overview {
-  margin-top: 100px; }
-  .skip-overview h1 {
-    color: #ff5722 !important; }
+.sec-head-end {
+  background-color: #F79220; }
 
-.navbar-right:hover a:hover {
-  border-bottom: #ffffff solid 3px;
-  background-color: #000051 !important;
-  color: white; }
+.skip-overview h1 {
+  color: #ffffff !important; }
+
+.skip-overview, .sec-head, .sec-head-end {
+  margin-top: 0;
+  margin-bottom: 0; }
 
 .container-div {
-  height: 100vh;
-  background-color: #000051; }
+  background-color: #0A2A49; }
   .container-div p {
     color: #E5E5ED; }
 
 section {
   padding: 1px 0 10px 0; }
-
-section:nth-child(even) {
-  background-color: #E8ECF0; }
-
-nav,
-footer {
-  background-color: #000051; }
-  nav a,
-  nav p, nav li,
-  footer a,
-  footer p,
-  footer li {
-    color: #ffffff;
-    font-size: 18px; }
-  nav .active,
-  footer .active {
-    background-color: #FFEEE8;
-    color: #000051; }
-  nav h3,
-  footer h3 {
-    color: white;
-    margin-top: 8px; }
-
-footer {
-  padding: 20px 30px;
-  bottom: 0px;
-  width: 100%;
-  margin-top: 40px; }
 
 .pop:hover {
   opacity: .5; }
