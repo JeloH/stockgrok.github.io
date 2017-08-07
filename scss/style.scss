@@ -2,22 +2,14 @@
 $brand-blue-100: #0A2A49;
 $brand-blue-50: #7F7FA8;
 $brand-blue-10: #E5E5ED;
-
 $brand-red-100: #D64A28;
 $brand-orange-100: #F79220;
 $brand-aqua-100: #1A617E;
-
 $brand-red-50: #FFAB90;
 $brand-red-10: #FFEEE8;
 $background-red: #FAECE9;
-
 $light-gray: #eee;
 $background-gray: #E8ECF0;
-
-
-
-
-
 ////////////////////////////////////////////To-do:////////////////////////////////////////////
 //  Change brand hover color 
 //  Make hover blue consistent
@@ -28,8 +20,6 @@ $background-gray: #E8ECF0;
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,400i,500,600i,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,500,600i,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,600i,700');
-
-
 * {
     box-sizing: border-box;
 }
@@ -44,6 +34,7 @@ p {
     line-height: 32px;
     font-family: 'Roboto', serif;
 }
+
 .page-content {
     background-color: $brand-blue-10;
     a {
@@ -51,66 +42,67 @@ p {
     }
     position: fixed;
     z-index: 3;
-width: 100%;
-//    top: 0;
+    width: 100%;
+    //    top: 0;
 }
 
+section {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    z-index: 0;
+}
 
-section{
-  position:relative;
-  margin: 0;
-  padding: 0;  
-  display:block;
-  z-index: 0;
+#home {
+    background: #A0CAB5;
+    top: 40px;
 }
-#home{
-background:#A0CAB5;  
-  top:40px;
+
+#work {
+    background: #CDE9CA;
 }
-#work{
-background:#CDE9CA;
+
+#about {
+    background: #F1EDD0;
 }
-#about{
-background:#F1EDD0;
+
+#contact {
+    background: #F38A8A;
 }
-#contact{
-background:#F38A8A;
-}
-h2{
-  padding: 0;
-  margin: 0;
+
+h2 {
+    padding: 0;
+    margin: 0;
 }
 
 .cta {
- 
-    h3{
+    h3 {
         color: $brand-red-100;
     }
     h3:hover {
         color: $brand-orange-100;
     }
-    
 }
 
 .cta:hover {
-        text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover {
     color: $brand-blue-100;
     text-decoration: none;
-    
 }
 
 //.newspaper {
 //    column-count: 2;
 //}
-
 .sec-subhead {
     border-left: 6px solid $brand-orange-100;
     padding-left: 20px;
     font-style: italic;
 }
+
 .sec-subhead2 {
     border-left: 6px solid $brand-red-100;
     padding-left: 20px;
@@ -120,6 +112,7 @@ a:hover {
 .newspaper3 {
     column-count: 3;
 }
+
 .newspaper-col {
     column-count: 2;
 }
@@ -134,12 +127,11 @@ h2 {
     margin-bottom: 16px;
 }
 
-
-
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     line-height: 55px;
     font-family: 'Roboto', sans-serif;
-    
 }
 
 h3 {
@@ -153,8 +145,6 @@ h4 {
     text-transform: uppercase;
     margin-bottom: 0;
 }
-
-
 
 p,
 li {
@@ -171,14 +161,13 @@ ol {
 }
 
 ////////////// nav and footer stuff //////////////
-
 .navbar-right {
-//    margin-bottom: -15px;
+    //    margin-bottom: -15px;
 }
 
 .navbar-right:hover {
     a:hover {
-//        border-bottom: #ffffff solid 3px;
+        //        border-bottom: #ffffff solid 3px;
         background-color: $brand-blue-100 !important;
         color: white;
     }
@@ -186,28 +175,38 @@ ol {
 
 .navbar-right:hover {
     a:hover:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width: 100%; /* Change this to whatever width you want. */
-    padding-top: 5px; /* This creates some space between the element and the border. */
-    border-bottom: #ffffff solid 3px;
+        content: "";
+        /* This is necessary for the pseudo element to work. */
+        display: block;
+        /* This will put the pseudo element on its own line. */
+        margin: 0 auto;
+        /* This will center the border. */
+        width: 100%;
+        /* Change this to whatever width you want. */
+        padding-top: 5px;
+        /* This creates some space between the element and the border. */
+        border-bottom: #ffffff solid 3px;
     }
 }
 
 .active:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width: 100%; /* Change this to whatever width you want. */
-    padding-top: 5px; /* This creates some space between the element and the border. */
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    /* This will center the border. */
+    width: 100%;
+    /* Change this to whatever width you want. */
+    padding-top: 5px;
+    /* This creates some space between the element and the border. */
     border-bottom: #ffffff solid 3px;
-    }
-
+}
 
 .navbar-brand {
     font-family: 'Roboto', sans-serif;
 }
+
 .navbar-brand:hover {
     color: $brand-orange-100;
 }
@@ -224,102 +223,85 @@ nav,
 footer {
     background-color: $brand-blue-100;
     a,
-    p, li {
+    p,
+    li {
         color: #ffffff;
         font-size: 18px;
     }
-    
     h3 {
         color: white;
         margin-top: 8px;
     }
 }
 
-
 $breakpoint-alpha: 480px; // adjust to your needs
-
 .rwd-table {
-  margin: 1em 0;
-  min-width: 300px; // adjust to your needs
-  
-  tr {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  th {
-    display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!   
-  }
-  
-  td {
-    display: block; 
-    
-    &:first-child {
-      padding-top: .5em;
+    margin: 1em 0;
+    min-width: 300px; // adjust to your needs
+    tr {
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
     }
-    &:last-child {
-      padding-bottom: .5em;
+    th {
+        display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!   
     }
-
-    &:before {
-      content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
-      font-weight: bold;
-
-      // optional stuff to make it look nicer
-      width: 6.5em; // magic number :( adjust according to your own content
-      display: inline-block;
-      // end options
-      
-      @media (min-width: $breakpoint-alpha) {
-        display: none;
-      }
+    td {
+        display: block;
+        &:first-child {
+            padding-top: .5em;
+        }
+        &:last-child {
+            padding-bottom: .5em;
+        }
+        &:before {
+            content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+            font-weight: bold;
+            // optional stuff to make it look nicer
+            width: 6.5em; // magic number :( adjust according to your own content
+            display: inline-block;
+            // end options
+            @media (min-width: $breakpoint-alpha) {
+                display: none;
+            }
+        }
     }
-  }
-  
-  th, td {
-    text-align: left;
-    
-    @media (min-width: $breakpoint-alpha) {
-      display: table-cell;
-      padding: .25em .5em;
-      
-      &:first-child {
-        padding-left: 0;
-      }
-      
-      &:last-child {
-        padding-right: 0;
-      }
+    th,
+    td {
+        text-align: left;
+        @media (min-width: $breakpoint-alpha) {
+            display: table-cell;
+            padding: .25em .5em;
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+        }
     }
-
-  }
-  
-  
 }
 
-
 // presentational styling
-
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700';
-
-
 .rwd-table {
-  background: $brand-blue-100;
-  color: #fff;
-  border-radius: .4em;
-  overflow: hidden;
-  tr {
-    border-color: lighten($brand-blue-100, 10%);
-  }
-  th, td {
-    margin: .5em 1em;
-    @media (min-width: $breakpoint-alpha) { 
-      padding: 1em !important; 
+    background: $brand-blue-100;
+    color: #fff;
+    border-radius: .4em;
+    overflow: hidden;
+    tr {
+        border-color: lighten($brand-blue-100, 10%);
     }
-  }
-  th, td:before {
-    color: $brand-orange-100;
-  }
+    th,
+    td {
+        margin: .5em 1em;
+        @media (min-width: $breakpoint-alpha) {
+            padding: 1em !important;
+        }
+    }
+    th,
+    td:before {
+        color: $brand-orange-100;
+    }
 }
 
 .img-responsive {
@@ -332,7 +314,7 @@ footer {
 }
 
 nav {
-//    border-bottom: $brand-red-100 4px solid;
+    //    border-bottom: $brand-red-100 4px solid;
 }
 
 footer {
@@ -343,16 +325,14 @@ footer {
 }
 
 ////////////// nav and footer end //////////////
-
-
 .header-sec {
-//    h1 {
-//        color: #fff !important;
-//    }
-//    p {
-//        color: #eee;
-//    }
-//    background-color: $brand-blue-100 !important;
+    //    h1 {
+    //        color: #fff !important;
+    //    }
+    //    p {
+    //        color: #eee;
+    //    }
+    //    background-color: $brand-blue-100 !important;
 }
 
 .caption {
@@ -413,13 +393,9 @@ a.booka {
     margin: 20px 0;
 }
 
-
-
-
 h3 {
     color: $brand-red-100;
 }
-
 
 //.fixed-body {
 //    position: fixed;
@@ -439,13 +415,12 @@ h3 {
     border-radius: 0;
     padding: 20px 20px 20px 0;
     text-transform: uppercase;
-    
-
     .glyphicon-chevron-right {
         color: #ffffff;
-        padding:  0 10px;
+        padding: 0 10px;
     }
-    li,span{
+    li,
+    span {
         float: left;
     }
     a:hover {
@@ -457,46 +432,43 @@ h3 {
 .sec-head {
     background-color: $brand-aqua-100;
     h2 {
-        color: #ffffff; 
+        color: #ffffff;
         margin-bottom: 0;
         padding-top: 5px;
         padding-bottom: 5px;
     }
     margin: 0;
-        padding: 0px 0 0 0;
-    
+    padding: 0px 0 0 0;
 }
 
 .sec-head-end {
-     @extend .sec-head;
+    @extend .sec-head;
     background-color: $brand-orange-100;
 }
 
-
 .skip-overview {
-//    margin-top: 100px;
+    //    margin-top: 100px;
     h1 {
         color: #ffffff !important;
     }
 }
 
-.skip-overview, .sec-head {
+.skip-overview,
+.sec-head {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-
 .container-div {
-
-//    height: 80vh;
+    //    height: 80vh;
     background-color: $brand-blue-100;
-    p {     
+    p {
         color: $brand-blue-10;
     }
 }
 
 #content {
-//    margin-top: 40px;
+    //    margin-top: 40px;
 }
 
 section {
@@ -506,7 +478,6 @@ section {
 //section:nth-child(even) {
 //    background-color: $background-gray;
 //}
-
 //section {
 //    border-left: $brand-red-100 3px solid;
 //    }
@@ -517,11 +488,9 @@ section {
 //    }
 //}
 //
-
 .pop:hover {
     opacity: .5;
 }
-
 
 body {
     //    background: #f9f9f9;
