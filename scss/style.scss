@@ -102,7 +102,25 @@ a:hover {
     
 }
 
-.newspaper {
+//.newspaper {
+//    column-count: 2;
+//}
+
+.sec-subhead {
+    border-left: 6px solid $brand-orange-100;
+    padding-left: 20px;
+    font-style: italic;
+}
+.sec-subhead2 {
+    border-left: 6px solid $brand-red-100;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+.newspaper3 {
+    column-count: 3;
+}
+.newspaper-col {
     column-count: 2;
 }
 
@@ -133,7 +151,6 @@ h4 {
     color: $brand-orange-100;
     font-weight: 600;
     text-transform: uppercase;
-    font-style: italic;
     margin-bottom: 0;
 }
 
@@ -218,6 +235,98 @@ footer {
     }
 }
 
+
+$breakpoint-alpha: 480px; // adjust to your needs
+
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px; // adjust to your needs
+  
+  tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!   
+  }
+  
+  td {
+    display: block; 
+    
+    &:first-child {
+      padding-top: .5em;
+    }
+    &:last-child {
+      padding-bottom: .5em;
+    }
+
+    &:before {
+      content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+      font-weight: bold;
+
+      // optional stuff to make it look nicer
+      width: 6.5em; // magic number :( adjust according to your own content
+      display: inline-block;
+      // end options
+      
+      @media (min-width: $breakpoint-alpha) {
+        display: none;
+      }
+    }
+  }
+  
+  th, td {
+    text-align: left;
+    
+    @media (min-width: $breakpoint-alpha) {
+      display: table-cell;
+      padding: .25em .5em;
+      
+      &:first-child {
+        padding-left: 0;
+      }
+      
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+  }
+  
+  
+}
+
+
+// presentational styling
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700';
+
+
+.rwd-table {
+  background: $brand-blue-100;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+  tr {
+    border-color: lighten($brand-blue-100, 10%);
+  }
+  th, td {
+    margin: .5em 1em;
+    @media (min-width: $breakpoint-alpha) { 
+      padding: 1em !important; 
+    }
+  }
+  th, td:before {
+    color: $brand-orange-100;
+  }
+}
+
+.img-responsive {
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+}
+
 footer {
     border-top: $brand-aqua-100 solid 8px;
 }
@@ -249,6 +358,8 @@ footer {
 .caption {
     font-size: .8em;
     color: #aaa;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -267,6 +378,10 @@ dialog {
 
 .highlight {
     border-bottom: $brand-orange-100 4px solid;
+}
+
+a.booka {
+    color: $brand-orange-100 !important;
 }
 
 
@@ -300,9 +415,9 @@ dialog {
 
 
 
-h2,
+
 h3 {
-    color: black;
+    color: $brand-red-100;
 }
 
 

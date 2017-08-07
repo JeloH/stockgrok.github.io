@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>b7g Product</title>
+    <title>Stockgrok Product</title>
 
     <!--To-do: Add favicon-->
     <!--    <link rel="icon" type="image/png" href="favicon.png">-->
@@ -63,32 +63,138 @@
     <div class="container-div" role="main" id="content">
         <div class="row skip-overview">
             <div class="col-sm-8 col-sm-offset-2">
-                <h1 tabindex="0">The Stockgrok Story</h1>
+                <h1 tabindex="0">How Stockgrok Works</h1>
+                <!--
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo natus incidunt iusto necessitatibus assumenda? Aliquid ut, architecto. Explicabo quidem beatae, dolorum saepe earum optio laudantium vero rem blanditiis qui sapiente corporis cum, voluptatem! Incidunt officia facilis nihil, illum blanditiis.
+                    Pick a stock, compare price to a 50 day moving average, get detail, decide. Make buy or sell decisions through sound.
                 </p>
-                <br>
-                <br>
-
-<!--
+-->
+            </div>
+            <div class="col-sm-8 col-sm-offset-2">
+                <img src="img/Browser-mock2.png" alt="Screenshot of Stockgrok home page" class="img-responsive" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <ol class="breadcrumb">
 
-                    <li><a href="#ideagen">Idea Generation</a></li>
+                    <li><a href="#stockgrok">What is Stockgrok for?</a></li>
                     <span class="glyphicon glyphicon-chevron-right"></span>
-                    <li><a href="#rapidp">Rapid Prototyping</a></li>
+                    <li><a href="#cues">How audio cues work</a></li>
                     <span class="glyphicon glyphicon-chevron-right"></span>
-                    <li><a href="#itdes">Iterative Design</a></li>
+                    <li><a href="#navig">How keyboard navigation works</a></li>
                     <span class="glyphicon glyphicon-chevron-right"></span>
-                    <li><a href="#stockgrok" class="highlight">Stockgrok</a></li>
+                    <li><a href="#feat">Other features</a></li>
                 </ol>
--->
+
             </div>
         </div>
     </div>
-    <div class="row sec-head" id="ideagen">
+
+
+    <div class="row sec-head" id="stockgrok">
         <div class="col-sm-8 col-sm-offset-2">
-            <h2>Lorem ipsum dolor sit</h2>
+            <h2>What is Stockgrok for?</h2>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div>
+            <div class="col-sm-8 col-sm-offset-2">
+                <p tabindex="0">In technical analysis, visual patterns of market data are used to make price predictions. Until now, there has been no non-visual expert tool for technical analysis. Starting with one common indicator, the simple moving average, Stockgrok helps users of all sight levels to get information about stock prices in context of a 50 day moving average to help them assess how well a security is performing. Navigate by keyboard alone or cursor for an auditory experience of a stock and its moving average over time.</p>
+                <p>Read on for details on Stockgrok's unique approach to sonification, as well as the use of keyboard navigation and other features. Read enough and ready to try it out? <a class="cta" href="https://stockgrok.github.io/prototype" target="_blank">Try out Stockgrok on Google Chrome.</a></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="row sec-head" id="cues">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h2>Audio cues</h2>
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="col-sm-8 col-sm-offset-2">
+            <p class="sec-subhead">Stockgrok uses three types of audio cues: pitch, timbre, and earcon. Pitch is used to indicate the distance of the price from the simple moving average indicator, timbre (the quality of the sound) to indicate the price line's position above or below the simple moving average indicator, and "earcons," or audio icons, are used to indicate that the price has crossed the simple moving average.</p>
+        </div>
+        <div class="col-sm-8 col-sm-offset-2">
+            <h3>Hear the distance between the price and its moving difference with pitch</h3>
+        </div>
+
+        <section>
+            <div class="col-sm-4 col-sm-offset-2">
+                <p>The greater the absolute difference (positive or negative) between the price and the simple moving average, the higher the pitch. The lower the difference, the lower the pitch. Compare an example of a high pitch, denoting that the price is far above the simple moving average, to a low pitch, denoting that the price is far below the simple moving average.</p>
+            </div>
+            <div class="col-sm-4">
+
+                <img src="img/product/magnitude-screen.png" alt="" class="img-responsive">
+
+                <audio controls>
+                    <source src="snd/lowpitch.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                    <source src="snd/highpitch.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                </audio>
+
+            </div>
+        </section>
+        <div class="col-sm-8 col-sm-offset-2">
+            <h3>Judge whether the price is above or below the simple moving average with timbre</h3>
+        </div>
+
+        <section>
+            <div class="col-sm-4 col-sm-offset-2">
+                <p>When the price is below the simple moving average, the quality of sound has an underwater quality.</p>
+            </div>
+            <div class="col-sm-4">
+
+                <img src="img/product/below-screen.png" alt="" class="img-responsive">
+                <audio controls>
+                    <source src="snd/below.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                </audio>
+
+            </div>
+        </section>
+        <section>
+            <div class="col-sm-4 col-sm-offset-2">
+                <p>When the price is above the simple moving average, the quality of sound is more brassy.</p>
+            </div>
+            <div class="col-sm-4">
+
+                <img src="img/product/above-screen.png" alt="" class="img-responsive">
+                <audio controls>
+                    <source src="snd/above.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                </audio>
+
+            </div>
+        </section>
+
+        <div class="col-sm-8 col-sm-offset-2">
+            <h3>Hear intersection points through earcons</h3>
+        </div>
+
+        <section>
+            <div class="col-sm-4 col-sm-offset-2">
+                <p>When the price crosses the simple moving average, you'll hear a ding, indicating the cross. If you're navigating day by day through the chart, you can use the timbre of surrounding days to judge the cross direction. When skipping from cross point to cross point, you'll hear whether the price is moving "above" or "below" the moving average through speech.</p>
+            </div>
+            <div class="col-sm-4">
+
+                <img src="img/product/cross-screen.png" alt="" class="img-responsive">
+
+                <audio controls>
+                    <source src="snd/earcon.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+                </audio>
+
+            </div>
+        </section>
+
+    </div>
+    <div class="row sec-head" id="navig">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h2>Keyboard navigation</h2>
 
         </div>
     </div>
@@ -98,20 +204,126 @@
     <div class="row">
         <div>
             <div class="col-sm-8 col-sm-offset-2">
-                <p tabindex="0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab explicabo quae voluptate incidunt ipsa ex quisquam dolore delectus quas provident.</p>
+                <p tabindex="0">
+                Stockgrok was built to be navigated using keyboard alone and offers a wide variety of keyboard shortcuts for easy access to features of interest. Use keyboard shortcut controls commands to move day by day (and pitch by pitch) through time in the chart, play specific values for date, % difference between price and simple moving average, closing price, and 50 day simple moving average, skip to the beginning and end, month by month, and through intersection points. You can also change the speech rate of the chart, separate from the rate of your default screen reader.</p>
+                <p>Keyboard commands work no matter where you're clicked on the screen.</p>
             </div>
         </div>
         <section>
             <div class="col-sm-8 col-sm-offset-2">
-                <h3>Section</h3>
-                <p tabindex="0" class="newspaper">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui illo expedita in dolores. Praesentium illum, beatae mollitia expedita. Magnam, dicta eius aliquid adipisci dignissimos. Reprehenderit voluptate qui quas minus, fugiat sunt commodi dolor ab consequuntur harum culpa repudiandae dolore cumque aliquid eius blanditiis veniam labore, rerum, quod repellendus debitis, fugit ratione. Pariatur ratione explicabo accusamus assumenda labore minus, praesentium quam dolores, veritatis tenetur excepturi maxime ullam nemo ea aspernatur saepe fugiat cupiditate nam quisquam voluptatem architecto impedit dicta repudiandae quibusdam. Excepturi debitis inventore, illo omnis. Vitae suscipit beatae ut alias odio illum, nemo cupiditate libero commodi numquam, eveniet atque cum.
 
-                </p>
+                <h3>Keyboard shortcuts</h3>
+                <table class="rwd-table">
+                    <tr>
+                        <th>Key</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td data-th="Key">h</td>
+                        <td data-th="Action">Traverse right (forward in time)</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Key">g</td>
+                        <td data-th="Action">Traverse left (backwards in time)</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Key">,</td>
+                        <td data-th="Action">Jump to beginning</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Key">.</td>
+                        <td data-th="Action">Jump to end</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Key">l</td>
+                        <td data-th="Action">Skip to previous intersection point</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Key">;</td>
+                        <td data-th="Action">Skip to next intersection point</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Key">o</td>
+                        <td data-th="Action">Jump to previous month</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Key">p</td>
+                        <td data-th="Action">Jump to next month</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Key">-</td>
+                        <td data-th="Action">Decrease screen reader speed</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Key">+</td>
+                        <td data-th="Action">Increase screen reader speed</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Key">Spacebar</td>
+                        <td data-th="Action">Play date, % difference between price and simple moving average, closing price, and 50 day simple moving average at any point in the chart</td>
+                    </tr>
+
+                </table>
+                
             </div>
 
 
         </section>
+
+    </div>
+    <div class="row sec-head" id="feat">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h2>Other features</h2>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+
+        <section>
+            <div class="col-sm-8 col-sm-offset-2">
+                <section>
+                    <h4>Access to visual interface for low vision and sighted users</h4>
+                    <p>Stockgrok was built to be accessible to people across the sighted spectrum. Because the audio and visuals are linked, sighted users can follow along as visually impaired users jump around the interface.</p>
+                </section>
+
+                <section>
+                    <h4>Select a stock of interest</h4>
+                    <p>Stockgrok pulls in data for stocks from NASDAQ and the S&P 500. Type in a ticker name to select a stock.</p>
+                    <img src="img/product/ticker.png" alt="Screenshot from Stockgrok of stock ticker entry form." class="img-responsive">
+                </section>
+                <section>
+                    <h4>Change date range</h4>
+                    <p>Change the date range to five years, one year, six months, three months, and one month by day.</p>
+                    <img src="img/product/range.png" alt="Screenshot from Stockgrok of time range buttons." class="img-responsive">
+                </section>
+                <section>
+                    <h4>Turn on and off the 50 Day Simple Moving Average indicator to hear price alone</h4>
+                    <p>Toggle the 50 Day Simple Moving Average button to only hear the stock line. The higher the pitch, the higher the price value.</p>
+                    <img src="img/product/price-screen.png" alt="Screenshot from Stockgrok of time range buttons." class="img-responsive">
+                </section>
+                <section>
+                    <h4>Get summary statistics</h4>
+                    <p>Access key details about the stock overall on the top of every chart. Currently you can access most recent price, percent change from the previous day, the point change from the previous day, the selected date range, and the high and low values of the range.</p>
+                    <img src="img/product/summary-stats.png" alt="Screenshot of summary statistics with details listed above." class="img-responsive">
+                    <p>Additionally, details are accessible for any given day on the chart, both visually and auditorally. Get details on the date, % difference, closing price, and 50 Day simple moving average for any given position in the chart.</p>
+                    <img src="img/product/current_pos.png" alt="Screenshot of visual detail view for current chart position with details listed above." class="img-responsive">
+                </section>
+
+
+            </div>
+
+
+        </section>
+        <section>
+            <div class="col-sm-8 col-sm-offset-2" style="margin-top:40px;">
+                <a href="#content">
+                    <p><i class="glyphicon glyphicon-chevron-up"></i> Back to Top</p>
+                </a>
+            </div>
+        </section>
+
 
     </div>
 
@@ -123,12 +335,37 @@
 <div id="footer">
 
 </div>
+<footer role="contentinfo">
+    <div class="row">
+        <div class="col-sm-1 col-sm-offset-2">
+            <p>Team b7g</p>
+        </div>
+        <div class="col-sm-7">
+            <p>We are a team of five Carnegie Mellon University Master’s of Human Computer Interaction students. We have been working with Bloomberg, LP to help make financial visualizations more accessible to people with visual impairments. This product is the culmination of eight months of research and design.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1 col-sm-offset-2">
+            <p>Sponsors</p>
+        </div>
+        <div class="col-sm-7">
+            <p>Bloomberg LP, Carnegie Mellon University</p>
+        </div>
+    </div>
+    <div class="row">
+    
+        <div class="col-sm-1 col-sm-offset-2">
+            <p>Copyright</p>
+        </div>
+        <div class="col-sm-7">
+            <p>&copy; 2017  Team b7g | HCII</p>
+        </div>
 
-<script type="text/javascript">
- $(function(){
- $("#footer").load("footer.html"); 
- });
-</script>
+    </div>
+
+    <!-- jQuery -->
+
+</footer>
 
 
 

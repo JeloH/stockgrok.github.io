@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,400i,500,600i,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,500,600i,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,600i,700");
+@import "https://fonts.googleapis.com/css?family=Montserrat:300,400,700";
 * {
   box-sizing: border-box; }
 
@@ -57,7 +58,20 @@ a:hover {
   color: #0A2A49;
   text-decoration: none; }
 
-.newspaper {
+.sec-subhead {
+  border-left: 6px solid #F79220;
+  padding-left: 20px;
+  font-style: italic; }
+
+.sec-subhead2 {
+  border-left: 6px solid #D64A28;
+  padding-left: 20px;
+  font-style: italic; }
+
+.newspaper3 {
+  column-count: 3; }
+
+.newspaper-col {
   column-count: 2; }
 
 h1 {
@@ -80,7 +94,6 @@ h4 {
   color: #F79220;
   font-weight: 600;
   text-transform: uppercase;
-  font-style: italic;
   margin-bottom: 0; }
 
 p,
@@ -151,6 +164,58 @@ footer {
     color: white;
     margin-top: 8px; }
 
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px; }
+  .rwd-table tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; }
+  .rwd-table th {
+    display: none; }
+  .rwd-table td {
+    display: block; }
+    .rwd-table td:first-child {
+      padding-top: .5em; }
+    .rwd-table td:last-child {
+      padding-bottom: .5em; }
+    .rwd-table td:before {
+      content: attr(data-th) ": ";
+      font-weight: bold;
+      width: 6.5em;
+      display: inline-block; }
+      @media (min-width: 480px) {
+        .rwd-table td:before {
+          display: none; } }
+  .rwd-table th, .rwd-table td {
+    text-align: left; }
+    @media (min-width: 480px) {
+      .rwd-table th, .rwd-table td {
+        display: table-cell;
+        padding: .25em .5em; }
+        .rwd-table th:first-child, .rwd-table td:first-child {
+          padding-left: 0; }
+        .rwd-table th:last-child, .rwd-table td:last-child {
+          padding-right: 0; } }
+
+.rwd-table {
+  background: #0A2A49;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden; }
+  .rwd-table tr {
+    border-color: #104476; }
+  .rwd-table th, .rwd-table td {
+    margin: .5em 1em; }
+    @media (min-width: 480px) {
+      .rwd-table th, .rwd-table td {
+        padding: 1em !important; } }
+  .rwd-table th, .rwd-table td:before {
+    color: #F79220; }
+
+.img-responsive {
+  margin-bottom: 10px !important;
+  margin-top: 10px !important; }
+
 footer {
   border-top: #1A617E solid 8px; }
 
@@ -162,7 +227,9 @@ footer {
 
 .caption {
   font-size: .8em;
-  color: #aaa; }
+  color: #aaa;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 /* needed for old browsers */
 dialog {
@@ -174,6 +241,9 @@ dialog {
 
 .highlight {
   border-bottom: #F79220 4px solid; }
+
+a.booka {
+  color: #F79220 !important; }
 
 /* overlay covers everything */
 .modal-overlay {
@@ -197,9 +267,8 @@ dialog {
 .row {
   margin: 20px 0; }
 
-h2,
 h3 {
-  color: black; }
+  color: #D64A28; }
 
 .breadcrumb > li {
   display: inline; }

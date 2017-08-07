@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>b7g</title>
+    <title>Stockgrok</title>
 
     <!--To-do: Add favicon-->
     <!--    <link rel="icon" type="image/png" href="favicon.png">-->
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" type="text/css" href="css/modaal.min.css">
-       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!--    </div>-->
@@ -25,16 +25,14 @@
     <script src="js/jquery.fitvids.min.js"></script>
 
     <style type="text/css">
-
-          .hidden {
-            position:absolute;
-            left:-10000px;
-            top:auto;
-            width:1px;
-            height:1px;
-            overflow:hidden;
-          }
-
+        .hidden {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
     </style>
 
 
@@ -71,23 +69,31 @@
         </div>
     </div>
 </nav>
+
 <body>
 
-    <div class="container" role="main" id="content">
+    <div class="all" role="main" id="content">
         <div class="row">
-            <div class="col-sm-9 col-sm-offset-1">
+            <div class="col-sm-8 col-sm-offset-2">
                 <h1>Stockgrok</h1>
-                <iframe class="video" width="825" height="476.72" title="Demo video using a dial to navigate a stock chart on a computer" src="https://www.youtube.com/embed/oXQN4aSaWZk?html5=1" frameborder="0" allowfullscreen></iframe>
-
-
-                <figcaption class="caption">For a fully keyboard-accessible alternative to this video, view it in Chrome or on any Android or iOS device, view it in Firefox with the YouTube ALL HTML5 add-on installed, or disable Flash in Internet Explorer.</figcaption>
+                <h2>Make buy or sell decisions through sound</h2>
+                <iframe class="video" width="825" height="476.72" title="Demo video using a dial to navigate a stock chart on a computer. For a fully keyboard-accessible alternative to this video, view it in Chrome or on any Android or iOS device, view it in Firefox with the YouTube ALL HTML5 add-on installed, or disable Flash in Internet Explorer." src="https://www.youtube.com/embed/H4G9w_csecE" frameborder="0" allowfullscreen></iframe>
+                
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-9 col-sm-offset-1">
+<!--
+        <div class="row sec-head" id="ideagen">
+            <div class="col-sm-8 col-sm-offset-2">
                 <h2>Make buy or sell decisions through sound</h2>
-                <p>            
-                    Stockgrok is a web-based tool that provides auditory counterparts to visual cues used to assess financial securities. Compare the price of any security of interest to its 50 Day Simple Moving Average purely through sound. Stockgrok uses a unique set of sonic interactions to enable hearing the distance between lines, intersection points, and price position above or below its moving average. Stockgrok is an inclusive solution designed to empower people with visual impairments assess financial trends and make buy or sell judgements non-visually.
+
+            </div>
+        </div>
+-->
+
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <p>
+                    Stockgrok is a web-based tool that provides auditory counterparts to visual cues in charts that are used to assess financial securities. Compare the price of any security of interest to its 50 Day Simple Moving Average purely through sound. Stockgrok uses a unique set of audio outputs that enable hearing the distance between lines, intersection points, and price position above or below its moving average. Stockgrok is an inclusive solution designed to empower people with visual impairments assess financial trends and make buy or sell judgements non-visually.
                 </p>
                 <a class="cta" href="https://stockgrok.github.io/prototype" target="_blank"><h3>Try out Stockgrok on Google Chrome</h3></a>
 
@@ -97,7 +103,7 @@
 
     <a href="#" aria-hidden="true" class="image-modal"></a>
 
- </body>
+</body>
 
 <!--
 <nav id="navvv">
@@ -121,12 +127,37 @@
 </div>
 
 
-<script type="text/javascript">
- $(function(){
- $("#footer").load("footer.html"); 
-     console.log("loading?");
- });
-</script>
+<footer role="contentinfo">
+    <div class="row">
+        <div class="col-sm-1 col-sm-offset-2">
+            <p>Team b7g</p>
+        </div>
+        <div class="col-sm-7">
+            <p>We are a team of five Carnegie Mellon University Master’s of Human Computer Interaction students. We have been working with Bloomberg, LP to help make financial visualizations more accessible to people with visual impairments. This product is the culmination of eight months of research and design.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1 col-sm-offset-2">
+            <p>Sponsors</p>
+        </div>
+        <div class="col-sm-7">
+            <p>Bloomberg LP, Carnegie Mellon University</p>
+        </div>
+    </div>
+    <div class="row">
+    
+        <div class="col-sm-1 col-sm-offset-2">
+            <p>Copyright</p>
+        </div>
+        <div class="col-sm-7">
+            <p>&copy; 2017  Team b7g | HCII</p>
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+
+</footer>
 
 
 </html>
